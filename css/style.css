@@ -1,0 +1,1327 @@
+@charset "UTF-8";
+.container .modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.container .modal {
+  width: 40vw;
+  height: auto;
+  max-height: 90vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.container .modal .modal-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  padding: 50px 20px;
+}
+.container .modal .modal-content .modalImg {
+  position: absolute;
+  top: -75px;
+  left: calc(50% - 75px);
+  z-index: 999;
+  width: 130px;
+}
+.container .modal .modal-content .modalTitle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 10px 20px 10px;
+}
+.container .modal .modal-content .modalTitle p {
+  font-weight: 700;
+  font-size: 24px;
+  color: #242424;
+}
+.container .modal .modal-content .modalTitle .icon {
+  width: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.container .modal .modal-content .modalTitle .icon img {
+  width: 24px;
+  cursor: pointer;
+}
+.container .modal .modal-content .contents {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.container .modal .modal-content .contents .contentsWrap {
+  width: 100%;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border: 1px solid #ccc;
+}
+.container .modal .modal-content .contents .contentsWrap .infoTitle {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.container .modal .modal-content .contents .contentsWrap .infoTitle img {
+  width: 26px;
+}
+.container .modal .modal-content .contents .contentsWrap .infoTitle p {
+  font-weight: 700;
+  font-size: 18px;
+  width: 100%;
+  color: #242424;
+}
+.container .modal .modal-content .contents .contentsWrap .patientInfo,
+.container .modal .modal-content .contents .contentsWrap .info {
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+.container .modal .modal-content .contents .contentsWrap .patientInfo .con,
+.container .modal .modal-content .contents .contentsWrap .info .con {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.container .modal .modal-content .contents .contentsWrap .patientInfo .con .title,
+.container .modal .modal-content .contents .contentsWrap .info .con .title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 25%;
+}
+.container .modal .modal-content .contents .contentsWrap .patientInfo .con .title p,
+.container .modal .modal-content .contents .contentsWrap .info .con .title p {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #242424;
+}
+.container .modal .modal-content .contents .contentsWrap .patientInfo .con .sub,
+.container .modal .modal-content .contents .contentsWrap .info .con .sub {
+  width: 75%;
+}
+.container .modal .modal-content .contents .contentsWrap .patientInfo .con .sub p,
+.container .modal .modal-content .contents .contentsWrap .info .con .sub p {
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0px;
+  color: #242424;
+  text-align: left;
+  word-break: keep-all;
+}
+.container .modal .modal-content .contents .contentsWrap .patientInfo .con .sub p span,
+.container .modal .modal-content .contents .contentsWrap .info .con .sub p span {
+  font-weight: 700;
+  margin-left: 5px;
+}
+.container .modal .modal-content .contents .contentsWrap .patientInfo .symptoms,
+.container .modal .modal-content .contents .contentsWrap .info .symptoms {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.container .modal .modal-content .contents .contentsWrap .patientInfo .symptoms .sub,
+.container .modal .modal-content .contents .contentsWrap .info .symptoms .sub {
+  width: 100%;
+}
+.container .modal .modal-content .contents .contentsWrap .patientInfo .border,
+.container .modal .modal-content .contents .contentsWrap .info .border {
+  width: 3px;
+  height: 100%;
+  background-color: #ccc;
+}
+.container .modal .modal-content .button {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.container .modal .modal-content .button button {
+  padding: 20px 50px;
+  background-color: #ffffff;
+  border: 1px solid #3983a0;
+  font-weight: 600;
+  font-size: 15px;
+  color: #242424;
+}
+.container .modal .modal-content .button button:last-child {
+  background-color: #3983a0;
+  color: #ffffff;
+  padding: 20px 70px;
+}
+.container .modalConfirm {
+  width: 20vw;
+  padding: 50px 20px 0px 20px;
+}
+.container .modalConfirm .modal-content {
+  gap: 20px;
+  position: relative;
+  padding: 50px 0px;
+}
+.container .modalConfirm .modal-content img {
+  position: absolute;
+  top: -50%;
+  left: calc(50% - 75px);
+  z-index: 999;
+  width: 150px;
+}
+.container .modalConfirm .modal-content .txt {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.container .modalConfirm .modal-content .txt p {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+}
+.container .modalConfirm .modal-content .txt p span {
+  font-weight: 700;
+  font-size: 20px;
+}
+.container .modalConfirm .modal-content .button button:last-child {
+  background-color: #3983a0;
+  border: none;
+  padding: 15px 40px;
+}
+.container .memberSearchModal {
+  width: 20vw;
+  padding: 50px 20px 0px 20px;
+}
+.container .memberSearchModal .modal-content {
+  gap: 20px;
+  position: relative;
+  padding: 50px 0px;
+}
+.container .memberSearchModal .modal-content img {
+  position: absolute;
+  top: -50%;
+  left: calc(50% - 75px);
+  z-index: 999;
+  width: 150px;
+}
+.container .memberSearchModal .modal-content .txt {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.container .memberSearchModal .modal-content .txt p {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+}
+.container .memberSearchModal .modal-content .txt p span {
+  font-weight: 700;
+  font-size: 20px;
+}
+.container .memberSearchModal .modal-content .button button {
+  background-color: #ffffff;
+  border: 1px solid #3983a0;
+  padding: 15px 40px;
+  color: #3983a0;
+}
+.container .memberSearchModal .modal-content .button button:last-child {
+  background-color: #3983a0;
+  border: none;
+  padding: 15px 40px;
+  color: #ffffff;
+}
+.container .memberSearchModal .modal-content .button1 {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.container .memberSearchModal .modal-content .button1 button {
+  background-color: #3983a0;
+  border: none;
+  padding: 15px 40px;
+  color: #ffffff;
+}
+.container .patientInfo {
+  width: 80vw;
+  padding: 0;
+}
+.container .patientInfo .modal-content {
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.container .patientInfo .modal-content .modalContentWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.container .patientInfo .modal-content .modalContentWrap .title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 20px;
+  background-color: #3983a0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.container .patientInfo .modal-content .modalContentWrap .title p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -1%;
+  line-height: 16px;
+  color: #242424;
+  color: #ffffff;
+}
+.container .patientInfo .modal-content .modalContentWrap .title img {
+  width: 20px;
+  height: 20px;
+}
+.container .patientInfo .modal-content .modalContentWrap .info {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: #f3f5f9;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.container .patientInfo .modal-content .modalContentWrap .info .img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.container .patientInfo .modal-content .modalContentWrap .info .img img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+.container .patientInfo .modal-content .modalContentWrap .info .img .txt {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.container .patientInfo .modal-content .modalContentWrap .info .img .txt .name {
+  width: 100%;
+}
+.container .patientInfo .modal-content .modalContentWrap .info .img .txt .name p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -1%;
+  line-height: 16px;
+  color: #242424;
+}
+.container .patientInfo .modal-content .modalContentWrap .info .img .txt .personalInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.container .patientInfo .modal-content .modalContentWrap .info .img .txt .personalInfo .p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.container .patientInfo .modal-content .modalContentWrap .info .img .txt .personalInfo .p p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: -1%;
+  line-height: 16px;
+  color: #242424;
+}
+.container .patientInfo .modal-content .modalContentWrap .info .img .txt .personalInfo .p p:first-child {
+  width: 10%;
+}
+.container .patientInfo .modal-content .modalContentWrap .info .img .txt .personalInfo .p p:last-child {
+  font-weight: 400;
+  font-size: 14px;
+}
+.container .patientInfo .modal-content .modalContentWrap .info .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.container .patientInfo .modal-content .modalContentWrap .info .icons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #0f3a59;
+  border-radius: 10px;
+  color: #ffffff;
+  width: 110px;
+  padding: 10px 15px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: -1%;
+}
+.container .patientInfo .modal-content .modalContentWrap .info .icons button img {
+  width: 15px;
+  height: 15px;
+}
+.container .patientInfo .modal-content .modalContentWrap .tab {
+  width: 100%;
+  padding: 0px 10px;
+  border-bottom: 1px solid #0f3a59;
+}
+.container .patientInfo .modal-content .modalContentWrap .tab ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+.container .patientInfo .modal-content .modalContentWrap .tab ul li {
+  width: 10%;
+  padding: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: #efefef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -1%;
+  color: #242424;
+}
+.container .patientInfo .modal-content .modalContentWrap .tab ul .on {
+  background-color: #0f3a59;
+  color: #ffffff;
+}
+.container .patientInfo .modal-content .modalContentWrap .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px 40px 20px;
+}
+.container .patientInfo .modal-content .modalContentWrap .content .filter-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.container .patientInfo .modal-content .modalContentWrap .content .filter-container select {
+  padding: 8px 16px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.container .patientInfo .modal-content .modalContentWrap .content .filter-container select:last-child {
+  margin-right: 0px;
+}
+.container .patientInfo .modal-content .modalContentWrap .content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.container .patientInfo .modal-content .modalContentWrap .content table th,
+.container .patientInfo .modal-content .modalContentWrap .content table td {
+  padding: 10px;
+  text-align: center;
+}
+.container .patientInfo .modal-content .modalContentWrap .content table th {
+  border-top: 1px solid #181818;
+  border-bottom: 1px solid #ccc;
+  background-color: #f2f2f2;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: -1%;
+}
+.container .patientInfo .modal-content .modalContentWrap .content table td {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -1%;
+  word-break: keep-all;
+  border-bottom: 1px solid #ccc;
+}
+.container .patientInfo .modal-content .modalContentWrap .content table tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+.container .patientInfo .modal-content .modalContentWrap .content table .setWidth {
+  width: 30%;
+  max-width: 30%;
+}
+.container .patientInfo .modal-content .modalContentWrap .content table button {
+  padding: 5px 15px;
+  background-color: #3983a0;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 1px solid #3983a0;
+}
+.container .patientInfo .modal-content .modalContentWrap .content table button:hover {
+  border: 1px solid #3983a0;
+  background-color: #ffffff;
+  color: #3983a0;
+}
+.container .patientInfo .modal-content .modalContentWrap .content .pagination {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  margin: 50px 0px 0px 0px;
+}
+.container .patientInfo .modal-content .modalContentWrap .content .pagination a {
+  padding: 5px 13px;
+  color: #0f3a59;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .patientInfo .modal-content .modalContentWrap .content .pagination a:hover {
+  background-color: #0f3a59;
+  color: #ffffff;
+}
+.container .patientInfo .modal-content .modalContentWrap .content .pagination a:first-child, .container .patientInfo .modal-content .modalContentWrap .content .pagination a:last-child {
+  border: none;
+}
+.container .patientInfo .modal-content .modalContentWrap .content .pagination .active {
+  background-color: #0f3a59;
+  color: white;
+}
+.container .patientInfo .modal-content .imgWrap {
+  border: 1px solid red;
+  height: 100%;
+}
+.container .patientInfo .modal-content .imgWrap img {
+  width: 150px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: #242424;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+.blue {
+  background-color: #93d5d5;
+}
+
+.color-light {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.green {
+  background-color: #cbe1d5;
+}
+
+.yellow {
+  background-color: #fff0a0;
+}
+
+.b {
+  background-color: #93d5d5;
+}
+
+.b-l {
+  background-color: rgba(147, 213, 213, 0.3);
+}
+
+.g {
+  background-color: #cbe1d5;
+}
+
+.g-l {
+  background-color: rgba(203, 225, 213, 0.3);
+}
+
+.y {
+  background-color: #fff0a0;
+}
+
+.y-l {
+  background-color: rgba(255, 240, 160, 0.3);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+input[type=text],
+input[type=date],
+input[type=password] {
+  padding: 5px;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+input[type=text]:focus,
+input[type=date]:focus,
+input[type=password]:focus {
+  outline: none;
+}
+
+select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+select:focus {
+  outline: none;
+}
+
+input,
+button {
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.nav-hidden {
+  transform: translateX(-100%);
+}
+
+.reservation {
+  background-color: #D9534F;
+}
+
+.consultation {
+  background-color: #F3D34A;
+}
+
+.outpatient {
+  background-color: #96CEB4;
+}
+
+.treatment {
+  background-color: #5A9A8F;
+}
+
+.surgery {
+  background-color: #FFAD60;
+}
+
+.surgery-progress {
+  background-color: #E17A47;
+}
+
+.admission {
+  background-color: #6A6D9E;
+}
+
+.cancel {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+.cancel .patientName,
+.cancel .staffName {
+  position: relative;
+}
+.cancel .patientName .name p,
+.cancel .patientName .birthday p,
+.cancel .staffName .name p,
+.cancel .staffName .birthday p {
+  text-decoration: line-through;
+}
+.cancel .patientName .name img,
+.cancel .patientName .birthday img,
+.cancel .staffName .name img,
+.cancel .staffName .birthday img {
+  display: none;
+}
+.cancel .patientName .icon img,
+.cancel .staffName .icon img {
+  display: none;
+}
+.cancel .patientName .name::after {
+  content: "취소";
+  position: absolute;
+  right: 0px;
+  color: #ff5959;
+  font-weight: 700;
+}
+.cancel p {
+  color: #ff5959;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+.container .header {
+  width: 100%;
+  height: 100px;
+  background-color: #3983a0;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  justify-content: space-between;
+}
+.container .header .logo {
+  width: 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .header .logo img {
+  width: 60%;
+  cursor: pointer;
+}
+.container .header nav {
+  width: 87%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 25px;
+  padding-right: 40px;
+  padding-top: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.container .header nav .txt,
+.container .header nav .tabMenu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.container .header nav .txt p,
+.container .header nav .txt li,
+.container .header nav .tabMenu p,
+.container .header nav .tabMenu li {
+  cursor: pointer;
+}
+.container .header nav .txt p,
+.container .header nav .tabMenu p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  line-height: 13px;
+  color: #ffffff;
+}
+.container .header nav .txt li,
+.container .header nav .tabMenu li {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  border: 1px solid #ffffff;
+  border-bottom: none;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 13px 5px;
+  text-align: center;
+}
+.container .header nav .txt .on,
+.container .header nav .tabMenu .on {
+  background-color: #ffffff;
+  color: #0f3a59;
+}
+.container .header nav .txt {
+  gap: 10px;
+}
+.container .header nav .tabMenu {
+  gap: 2px;
+}
+.container .sidebar {
+  width: 13%;
+  background-color: #0f3a59;
+  color: white;
+  height: calc(100vh - 100px); /* 헤더의 높이를 제외한 높이 */
+  position: fixed;
+  top: 100px;
+  left: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container .sidebar .search {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container .sidebar .search .txt p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+}
+.container .sidebar .search .button {
+  width: 100%;
+}
+.container .sidebar .search .button button {
+  width: 100%;
+  padding: 8px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  text-align: center;
+  color: #242424;
+  color: #242424;
+  background-color: #ffffff;
+}
+.container .sidebar .menu {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% + 40px);
+  margin: 0 -20px;
+}
+.container .sidebar .menu li {
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.container .sidebar .menu li img {
+  width: 15px;
+  height: 15px;
+}
+.container .sidebar .menu li p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  color: #ffffff;
+}
+.container .sidebar .menu .on {
+  background-color: #3f6b8d;
+}
+.container .sidebar .info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container .sidebar .info .title img {
+  width: 60%;
+}
+.container .sidebar .info .title,
+.container .sidebar .info .schedule,
+.container .sidebar .info .number {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+}
+.container .sidebar .info .title p,
+.container .sidebar .info .schedule p,
+.container .sidebar .info .number p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  color: #ffffff;
+}
+.container .sidebar .info .schedule .scheduleCon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.container .sidebar .info .schedule .scheduleCon p:first-child {
+  font-weight: 700;
+}
+.container .sidebar .info .schedule .red p {
+  color: #ff5959;
+}
+.container .sidebar .info .btn button {
+  width: 100%;
+  padding: 8px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+  color: #242424;
+  background-color: #ffffff;
+}
+.container .content {
+  margin-left: 13%; /* 사이드바의 너비만큼 여백 */
+  margin-top: 100px; /* 헤더의 높이만큼 여백 */
+  padding: 20px;
+  overflow-y: auto;
+  height: calc(100vh - 100px); /* 헤더의 높이를 제외한 높이 */
+  background-color: #fff;
+  width: 100%;
+}
+
+.login .loginMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 0px 300px;
+}
+.login .loginMain .companyInfo {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #ccc;
+}
+.login .loginMain .companyInfo .img {
+  display: flex;
+  justify-content: flex-start;
+}
+.login .loginMain .companyInfo .img img {
+  width: 50%;
+}
+.login .loginMain .companyInfo .loginTitle {
+  margin-top: 10px;
+}
+.login .loginMain .companyInfo .loginTitle p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: -1%;
+  word-break: keep-all;
+  color: #242424;
+}
+.login .loginMain .companyInfo .bottom {
+  margin-top: 100px;
+}
+.login .loginMain .companyInfo .bottom p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 0px;
+  word-break: keep-all;
+  color: #909090;
+}
+.login .loginMain .loginWrap {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-left: 50px;
+}
+.login .loginMain .loginWrap form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.login .loginMain .loginWrap form .loginInput {
+  display: flex;
+  align-items: center;
+}
+.login .loginMain .loginWrap form .loginInput label {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0px;
+  word-break: keep-all;
+  width: 80px;
+}
+.login .loginMain .loginWrap form .loginInput input {
+  flex-grow: 1;
+  background-color: #f5f5f6;
+  border: none;
+  padding: 10px;
+}
+.login .loginMain .loginWrap form .errTxt {
+  margin-top: -10px;
+  margin-left: 80px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.login .loginMain .loginWrap form .errTxt p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0px;
+  word-break: keep-all;
+  color: #ff5959;
+}
+.login .loginMain .loginWrap form button {
+  background-color: #3983a0;
+  color: #ffffff;
+  padding: 10px;
+  margin-left: 80px;
+  border-radius: 8px;
+}
+.login .loginMain .loginWrap .socialLogin {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.login .loginMain .loginWrap .socialLogin .loginTxt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.login .loginMain .loginWrap .socialLogin .loginTxt .border {
+  width: 100%;
+  border: 1px solid #efefef;
+}
+.login .loginMain .loginWrap .socialLogin .loginTxt p {
+  width: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0px;
+  word-break: keep-all;
+  color: #ff5959;
+  color: #242424;
+  text-align: center;
+}
+.login .loginMain .loginWrap .socialLogin button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+.login .loginMain .loginWrap .find {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.login .loginMain .loginWrap .find p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0px;
+  word-break: keep-all;
+  color: #242424;
+  cursor: pointer;
+}
+
+.main .mainMain {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.main .mainMain .title {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .mainMain .title p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 21px;
+  letter-spacing: 0px;
+  color: #242424;
+}
+.main .mainMain .title button {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: #0f3a59;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0px;
+  color: #242424;
+  color: white;
+}
+.main .mainMain .search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.main .mainMain .search .date {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main .mainMain .search .date input {
+  width: 220px;
+}
+.main .mainMain .search .date button {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: #0f3a59;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0px;
+  color: #242424;
+  color: #ffffff;
+}
+.main .mainMain .search .searchCon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main .mainMain .search .searchCon select {
+  width: 150px;
+}
+.main .mainMain .search .searchCon .search-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.main .mainMain .search .searchCon .search-input input {
+  padding-left: 35px;
+  width: 300px;
+}
+.main .mainMain .search .searchCon .search-input img {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+.main .mainMain .search .searchCon button {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: #0f3a59;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0px;
+  color: #242424;
+  color: #ffffff;
+}
+.main .mainMain .filters {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.main .mainMain .filters .filter-category {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  padding: 15px 0px;
+}
+.main .mainMain .filters .filter-category h4 {
+  width: 100px;
+  text-align: center;
+}
+.main .mainMain .filters .filter-category label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.main .mainMain .filters .filter-category label input[type=radio] {
+  margin-right: 5px;
+}
+.main .mainMain .filters .filter-category label p {
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+}
+.main .mainMain .filters .filter-category:nth-child(2) {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.main .mainMain .filters .staff {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+}
+.main .mainMain .filters .staff h4 {
+  grid-column: 1/2;
+  grid-row: 1;
+}
+.main .mainMain .filters .staff .staff-options {
+  grid-column: 2/3;
+  grid-row: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.main .mainMain .result {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+.main .mainMain .result .result-wrap {
+  padding: 15px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.main .mainMain .result .result-wrap .count {
+  width: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex-shrink: 0;
+  margin-left: 10px;
+}
+.main .mainMain .result .result-wrap .count p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #242424;
+}
+.main .mainMain .result .result-wrap .count p:last-child {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #242424;
+}
+.main .mainMain .result .result-wrap .card-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-grow: 1; /* 남은 공간을 모두 사용 */
+}
+.main .mainMain .result .result-wrap .card-wrap .card {
+  padding: 20px 25px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: calc(50% - 20px); /* 각 카드의 최대 너비를 반응형으로 조정 */
+  cursor: pointer;
+  width: 250px;
+}
+.main .mainMain .result .result-wrap .card-wrap .card .patientName {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.main .mainMain .result .result-wrap .card-wrap .card .patientName .name,
+.main .mainMain .result .result-wrap .card-wrap .card .patientName .birthday {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.main .mainMain .result .result-wrap .card-wrap .card .patientName .name p,
+.main .mainMain .result .result-wrap .card-wrap .card .patientName .birthday p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+}
+.main .mainMain .result .result-wrap .card-wrap .card .patientName .name img,
+.main .mainMain .result .result-wrap .card-wrap .card .patientName .birthday img {
+  width: 22px;
+}
+.main .mainMain .result .result-wrap .card-wrap .card .staffName {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.main .mainMain .result .result-wrap .card-wrap .card .staffName .name {
+  display: flex;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.main .mainMain .result .result-wrap .card-wrap .card .staffName .name p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+}
+.main .mainMain .result .result-wrap .card-wrap .card .staffName .icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}
+.main .mainMain .result .result-wrap .card-wrap .card .staffName .icon img {
+  width: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.main .mainMain .result .result-wrap .card-wrap .card .staffName .icon img:hover {
+  transform: scale(1.2);
+}
+
+/*# sourceMappingURL=style.css.map */

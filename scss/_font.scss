@@ -1,0 +1,331 @@
+// header
+@mixin headerNav {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	letter-spacing: 0.5px;
+	line-height: 13px;
+	color: $white;
+}
+
+@mixin headerNavLi {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	text-align: center;
+	color: $white;
+}
+
+@mixin sidebarSearch {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	text-align: center;
+	color: $white;
+}
+
+@mixin sidebarSearchButton {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 500;
+	font-size: 13px;
+	text-align: center;
+	color: $main-font-color;
+}
+
+@mixin sidebarMenu {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	text-align: center;
+	color: $white;
+}
+
+@mixin sidebarInfo {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	text-align: center;
+	color: $white;
+}
+
+@mixin sidebarInfoButton {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	text-align: center;
+	color: $white;
+}
+
+// Login
+@mixin logintitle {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 700;
+	font-size: 22px;
+	letter-spacing: 0px;
+	word-break: keep-all;
+	color: $main-font-color;
+}
+
+@mixin loginttxt {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 500;
+	font-size: 11px;
+	letter-spacing: 0px;
+	word-break: keep-all;
+	color: #909090;
+}
+
+@mixin loginlabel {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 600;
+	font-size: 15px;
+	letter-spacing: 0px;
+	word-break: keep-all;
+}
+
+@mixin loginErrTxt {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 500;
+	font-size: 13px;
+	letter-spacing: 0px;
+	word-break: keep-all;
+	color: $red;
+}
+
+@mixin loginSocial {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	letter-spacing: 0px;
+	word-break: keep-all;
+	color: $main-font-color;
+}
+
+@mixin loginFind {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	letter-spacing: 0px;
+	word-break: keep-all;
+	color: $main-font-color;
+}
+
+// main - title
+
+@mixin title {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 500;
+	font-size: 21px;
+	letter-spacing: 0px;
+	color: $main-font-color;
+}
+
+@mixin button {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 500;
+	font-size: 13px;
+	letter-spacing: 0px;
+	color: $main-font-color;
+}
+
+@mixin label {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	color: $white;
+}
+
+@mixin countTime {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	color: $main-font-color;
+}
+
+@mixin countNumber {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	color: $main-font-color;
+}
+
+@mixin patientName {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 700;
+	font-size: 15px;
+	color: $white;
+	letter-spacing: -0.5px;
+}
+
+@mixin staffName {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	color: $white;
+	letter-spacing: -0.5px;
+}
+
+@mixin td {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: -1%;
+	line-height: 20.27px;
+	color: $grey6;
+}
+
+@mixin td02 {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	letter-spacing: -1%;
+	line-height: 17.47px;
+	color: $grey6;
+}
+
+@mixin pagination {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 500;
+	font-size: 13px;
+	letter-spacing: -1%;
+	line-height: 13px;
+}
+
+@mixin personal-info-name {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	letter-spacing: -1%;
+	line-height: 26.06px;
+	color: #fff;
+}
+
+@mixin personal-info-number {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	letter-spacing: -1%;
+	line-height: 20.27px;
+	color: #fff;
+}
+
+@mixin member-info-content-title {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: -1%;
+	line-height: 20.27px;
+	color: $grey6;
+}
+
+@mixin menu-tab {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	letter-spacing: -1%;
+	line-height: 16px;
+	color: $grey6;
+}
+
+@mixin mainTitle {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: -1%;
+	line-height: 16px;
+	color: $grey6;
+	text-align: right;
+}
+
+@mixin registrationTitle {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 600;
+	font-size: 15px;
+	letter-spacing: -1%;
+	line-height: 16px;
+	color: $grey6;
+}
+
+@mixin patientInfotitle {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	letter-spacing: -1%;
+	line-height: 16px;
+	color: $grey6;
+}
+
+@mixin patientInfoName {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: -1%;
+	line-height: 16px;
+	color: $grey6;
+}
+
+@mixin patientInfop {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 600;
+	font-size: 15px;
+	letter-spacing: -1%;
+	line-height: 16px;
+	color: $grey6;
+}
+
+@mixin patientInfotab {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: -1%;
+	color: $grey6;
+}
+
+@mixin patientInfobutton {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	letter-spacing: -1%;
+}
+
+@mixin patientInfoTableTH {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 600;
+	font-size: 15px;
+	letter-spacing: -1%;
+}
+
+@mixin patientInfoTable {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	letter-spacing: -1%;
+	word-break: keep-all;
+}
+
+// Login
+@mixin logintitle {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 700;
+	font-size: 22px;
+	letter-spacing: -1%;
+	word-break: keep-all;
+	color: $main-font-color;
+}
+
+@mixin logintxt {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	letter-spacing: -1%;
+	word-break: keep-all;
+	color: #909090;
+}
+
+@mixin loginid {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 600;
+	font-size: 15px;
+	letter-spacing: -1%;
+	word-break: keep-all;
+}

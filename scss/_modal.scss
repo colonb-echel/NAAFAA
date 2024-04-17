@@ -1,0 +1,605 @@
+.container {
+	.modal-backdrop {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: 1;
+	}
+
+	.modal {
+		width: 40vw;
+		height: auto;
+		max-height: 90vh;
+
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		z-index: 2;
+		background-color: white;
+		border-radius: 20px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+		.modal-content {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			position: relative;
+			padding: 50px 20px;
+
+			.modalImg {
+				position: absolute;
+				top: -75px;
+				left: calc(50% - 75px);
+				z-index: 999;
+				width: 130px;
+			}
+
+			.modalTitle {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 40px 10px 20px 10px;
+
+				p {
+					font-weight: 700;
+					font-size: 24px;
+					color: $main-font-color;
+				}
+
+				.icon {
+					width: 50px;
+					display: flex;
+					justify-content: flex-end;
+					align-items: center;
+
+					img {
+						width: 24px;
+						cursor: pointer;
+					}
+				}
+			}
+
+			.contents {
+				width: 100%;
+				display: flex;
+
+				justify-content: space-between;
+				gap: 30px;
+
+				.contentsWrap {
+					width: 100%;
+					padding: 30px;
+					border-radius: 20px;
+					display: flex;
+					flex-direction: column;
+					gap: 40px;
+
+					border: 1px solid #ccc;
+
+					.infoTitle {
+						display: flex;
+						align-items: center;
+						gap: 13px;
+
+						img {
+							width: 26px;
+						}
+
+						p {
+							font-weight: 700;
+							font-size: 18px;
+							width: 100%;
+							color: $main-font-color;
+						}
+					}
+
+					.patientInfo,
+					.info {
+						border-radius: 20px;
+						width: 100%;
+
+						display: flex;
+						flex-direction: column;
+						justify-content: space-between;
+						gap: 15px;
+
+						.con {
+							display: flex;
+							align-items: center;
+							gap: 10px;
+
+							.title {
+								display: flex;
+								align-items: center;
+								justify-content: flex-start;
+
+								width: 25%;
+
+								p {
+									font-weight: 700;
+									font-size: 16px;
+									letter-spacing: 0px;
+									color: $main-font-color;
+								}
+							}
+
+							.sub {
+								width: 75%;
+
+								p {
+									font-weight: 500;
+									font-size: 15px;
+									letter-spacing: 0px;
+									color: $main-font-color;
+									text-align: left;
+									word-break: keep-all;
+
+									span {
+										font-weight: 700;
+										margin-left: 5px;
+									}
+								}
+							}
+						}
+
+						.symptoms {
+							display: flex;
+							flex-direction: column;
+							align-items: flex-start;
+
+							.sub {
+								width: 100%;
+							}
+						}
+
+						.border {
+							width: 3px;
+							height: 100%;
+							background-color: #ccc;
+						}
+					}
+				}
+			}
+
+			.button {
+				margin-top: 30px;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 10px;
+
+				button {
+					padding: 20px 50px;
+					background-color: $white;
+					border: 1px solid $main-color;
+
+					font-weight: 600;
+					font-size: 15px;
+					color: $main-font-color;
+
+					&:last-child {
+						background-color: $main-color;
+						color: $white;
+						padding: 20px 70px;
+					}
+				}
+			}
+		}
+	}
+
+	.modalConfirm {
+		width: 20vw;
+		padding: 50px 20px 0px 20px;
+
+		.modal-content {
+			gap: 20px;
+			position: relative;
+			padding: 50px 0px;
+
+			img {
+				position: absolute;
+				top: -50%;
+				left: calc(50% - 75px);
+				z-index: 999;
+				width: 150px;
+			}
+
+			.txt {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				gap: 10px;
+
+				margin-top: 10px;
+
+				p {
+					font-weight: 500;
+					font-size: 18px;
+					text-align: center;
+
+					span {
+						font-weight: 700;
+						font-size: 20px;
+					}
+				}
+			}
+
+			.button {
+				button {
+					&:last-child {
+						background-color: $main-color;
+						border: none;
+						padding: 15px 40px;
+					}
+				}
+			}
+		}
+	}
+
+	.memberSearchModal {
+		width: 20vw;
+		padding: 50px 20px 0px 20px;
+
+		.modal-content {
+			gap: 20px;
+			position: relative;
+			padding: 50px 0px;
+
+			img {
+				position: absolute;
+				top: -50%;
+				left: calc(50% - 75px);
+				z-index: 999;
+				width: 150px;
+			}
+
+			.txt {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				gap: 10px;
+
+				p {
+					font-weight: 500;
+					font-size: 18px;
+					text-align: center;
+
+					span {
+						font-weight: 700;
+						font-size: 20px;
+					}
+				}
+			}
+
+			.button {
+				button {
+					background-color: $white;
+					border: 1px solid $main-color;
+					padding: 15px 40px;
+					color: $main-color;
+
+					&:last-child {
+						background-color: $main-color;
+						border: none;
+						padding: 15px 40px;
+						color: $white;
+					}
+				}
+			}
+
+			.button1 {
+				margin-top: 30px;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-content: center;
+
+				button {
+					background-color: $main-color;
+					border: none;
+					padding: 15px 40px;
+					color: $white;
+				}
+			}
+		}
+	}
+
+	.patientInfo {
+		width: 80vw;
+		padding: 0;
+
+		.modal-content {
+			padding: 0px;
+			display: flex;
+			align-items: center;
+			flex-direction: row;
+
+			.modalContentWrap {
+				display: flex;
+				flex-direction: column;
+
+				gap: 40px;
+
+				.title {
+					width: 100%;
+					display: flex;
+					justify-content: space-between;
+					align-content: center;
+					padding: 20px;
+					background-color: $main-color;
+					border-top-left-radius: 20px;
+					border-top-right-radius: 20px;
+
+					p {
+						@include patientInfotitle;
+						color: $white;
+					}
+
+					img {
+						width: 20px;
+						height: 20px;
+					}
+				}
+
+				.info {
+					padding: 20px;
+					display: flex;
+					justify-content: space-between;
+					align-items: flex-end;
+					background-color: $bg3;
+					border-top: 1px solid #ccc;
+					border-bottom: 1px solid #ccc;
+
+					.img {
+						width: 100%;
+						display: flex;
+						align-items: center;
+						gap: 40px;
+
+						img {
+							width: 100px;
+							height: 100px;
+							border-radius: 50%;
+							border: 2px solid #ccc;
+						}
+
+						.txt {
+							width: 100%;
+							display: flex;
+							flex-direction: column;
+							justify-content: center;
+							gap: 20px;
+
+							.name {
+								width: 100%;
+
+								p {
+									@include patientInfoName;
+								}
+							}
+
+							.personalInfo {
+								display: flex;
+								flex-direction: column;
+								align-items: center;
+								gap: 10px;
+
+								.p {
+									display: flex;
+									align-items: center;
+									gap: 10px;
+									width: 100%;
+
+									p {
+										@include patientInfop;
+
+										&:first-child {
+											width: 10%;
+										}
+
+										&:last-child {
+											font-weight: 400;
+											font-size: 14px;
+										}
+									}
+								}
+							}
+						}
+					}
+
+					.icons {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						gap: 15px;
+
+						button {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							gap: 10px;
+							background-color: $menu-color;
+							border-radius: 10px;
+							color: $white;
+							width: 110px;
+							padding: 10px 15px;
+
+							@include patientInfobutton;
+
+							img {
+								width: 15px;
+								height: 15px;
+							}
+						}
+					}
+				}
+
+				.tab {
+					width: 100%;
+					padding: 0px 10px;
+					border-bottom: 1px solid $menu-color;
+
+					ul {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						gap: 3px;
+
+						li {
+							width: (100% / 10);
+							padding: 10px;
+							border-top-right-radius: 10px;
+							border-top-left-radius: 10px;
+							background-color: $bg;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+
+							@include patientInfotab;
+						}
+
+						.on {
+							background-color: $menu-color;
+							color: $white;
+						}
+					}
+				}
+
+				.content {
+					width: 100%;
+
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+
+					padding: 20px 20px 40px 20px;
+
+					.filter-container {
+						margin-bottom: 20px;
+						display: flex;
+						justify-content: flex-end;
+						width: 100%;
+
+						select {
+							padding: 8px 16px;
+							margin-right: 10px;
+							border: 1px solid #ccc;
+							border-radius: 8px;
+
+							&:last-child {
+								margin-right: 0px;
+							}
+						}
+					}
+
+					table {
+						width: 100%;
+						border-collapse: collapse;
+
+						th,
+						td {
+							padding: 10px;
+							text-align: center;
+						}
+
+						th {
+							border-top: 1px solid #181818;
+							border-bottom: 1px solid #ccc;
+							background-color: #f2f2f2;
+							@include patientInfoTableTH;
+						}
+
+						td {
+							@include patientInfoTable;
+							border-bottom: 1px solid #ccc;
+						}
+
+						tr {
+							&:nth-child(even) {
+								background-color: #f1f1f1;
+							}
+						}
+
+						.setWidth {
+							width: 30%;
+							max-width: 30%;
+						}
+
+						button {
+							padding: 5px 15px;
+							background-color: $main-color;
+							color: white;
+							border: none;
+							cursor: pointer;
+							transition: all 0.3s;
+							border: 1px solid $main-color;
+
+							&:hover {
+								border: 1px solid $main-color;
+								background-color: $white;
+								color: $main-color;
+							}
+						}
+					}
+
+					.pagination {
+						width: 100%;
+						display: flex;
+						list-style: none;
+						justify-content: center;
+						align-items: center;
+						gap: 10px;
+						padding: 0;
+						margin: 50px 0px 0px 0px;
+
+						a {
+							padding: 5px 13px;
+							color: $menu-color;
+							border: 1px solid #ccc;
+
+							display: flex;
+							justify-content: center;
+							align-items: center;
+
+							&:hover {
+								background-color: $menu-color; // 마우스 오버시 배경색 변경
+								color: $white;
+							}
+
+							&:first-child,
+							&:last-child {
+								border: none;
+							}
+						}
+
+						.active {
+							background-color: $menu-color;
+							color: white; // 활성 페이지의 텍스트 색상
+						}
+					}
+				}
+			}
+
+			.imgWrap{
+				border: 1px solid red;
+				height: 100%;
+
+				img{
+					width: 150px;
+				}
+			}
+		}
+	}
+}

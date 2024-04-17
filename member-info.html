@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>나아파 어드민</title>
+
+    <meta name="keyword" content="나아파">
+    <meta name="description" content="나아파">
+    <meta name="author" content="나아파">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Google Material Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- script -->
+    <script defer src="./js/main.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="wrap">
+
+            <div class="menu-l">
+                <div class="header-title-special">
+                    <p>환자상세정보</p>
+                </div>
+            </div>
+
+            <div class="menu-r">
+                <div class="icon">
+                    <img src="./img/icon/xbtn.svg" alt="닫기">
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="wrap">
+            <div class="member-info">
+                <div class="personal-info">
+                    <div class="name">
+                        <p>황선호 <span>님 (56세 / 남)</span></p>
+                    </div>
+
+                    <div class="number">
+                        <p>010-1234-5678</p>
+                        <p>900101-0101010</p>
+                    </div>
+                </div>
+
+                <div class="personal-info2">
+                    <div class="member-info-content">
+                        <div class="content">
+                            <p>최근 방문일</p>
+                            <p>2023. 04. 13</p>
+                        </div>
+
+                        <div class="content">
+                            <p>총 방문 횟수</p>
+                            <p>58 <span>건</span></p>
+                        </div>
+                    </div>
+
+                    <div class="member-info-content">
+                        <div class="content">
+                            <p>방문 예약</p>
+                            <p>1 <span>건</span></p>
+                        </div>
+
+                        <div class="content">
+                            <p>비대면 상담 예약</p>
+                            <p>10 <span>건</span></p>
+                        </div>
+
+                        <div class="content">
+                            <p>온라인 접수</p>
+                            <p>10 <span>건</span></p>
+                        </div>
+
+                        <div class="content">
+                            <p>왕진예약</p>
+                            <p>10 <span>건</span></p>
+                        </div>
+                    </div>
+
+                    <div class="member-info-content">
+                        <div class="content">
+                            <p>서류요청 건</p>
+                            <p>15 <span>건</span></p>
+                        </div>
+
+                        <div class="content">
+                            <p>방문 문의</p>
+                            <p>15 <span>건</span></p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <main>
+                <section>
+                    <div class="menu-tab">
+                        <div class="menu blue">
+                            <p>기본정보</p>
+                        </div>
+                        <div class="menu">
+                            <p>히스토리</p>
+                        </div>
+                        <div class="menu">
+                            <p>예약관리</p>
+                        </div>
+                        <div class="menu">
+                            <p>접수관리</p>
+                        </div>
+                        <div class="menu">
+                            <p>진료관리</p>
+                        </div>
+                        <div class="menu">
+                            <p>병원문의</p>
+                        </div>
+                        <div class="menu">
+                            <p>기타</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="member-info-table">
+                    <div class="title02">
+                        <p class="title-p">기본정보</p>
+                    </div>
+
+                    <table>
+                        <tr>
+                            <td>회원번호</td>
+                            <td>12345</td>
+                            <td>환자명</td>
+                            <td>김기리</td>
+                        </tr>
+                        <tr>
+                            <td>회원아이디</td>
+                            <td>010-2345-1234</td>
+                            <td>환자연락처</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>주민등록번호</td>
+                            <td>812345-2345678</td>
+                            <td>이메일</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>가족 구성원</td>
+                            <td>1</td>
+                            <td>결제등록여부</td>
+                            <td>등록</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">주소</td>
+                            <td colspan="3">
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="text">
+                                <button>주소변경</button>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section>
+                    <div class="title02">
+                        <p class="title-p">환자 방문 상태</p>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="title02">
+                        <p class="title-p">환자 관련 메모</p>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+</body>
+
+</html>

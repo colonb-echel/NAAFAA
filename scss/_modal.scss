@@ -30,7 +30,7 @@
 			flex-direction: column;
 			gap: 20px;
 			position: relative;
-			padding: 50px 20px;
+			padding: 50px 30px;
 
 			.modalImg {
 				position: absolute;
@@ -199,6 +199,8 @@
 		width: 20vw;
 		padding: 50px 20px 0px 20px;
 
+		border: 2px solid $main-color;
+
 		.modal-content {
 			gap: 20px;
 			position: relative;
@@ -315,132 +317,254 @@
 			}
 		}
 	}
+}
 
-	.patientInfo {
-		width: 80vw;
-		padding: 0;
+.modalContainer {
+	display: flex;
+	height: 100vh;
 
-		.modal-content {
-			padding: 0px;
+	header {
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 1000;
+	}
+
+	aside {
+		width: 13%;
+		height: calc(100vh - 100px); /* 헤더의 높이를 제외한 높이 */
+		position: fixed;
+		top: 100px;
+		left: 0;
+		padding: 20px;
+		padding-top: 0px;
+	}
+
+	.modalContent {
+		margin-left: 13%; /* 사이드바의 너비만큼 여백 */
+		margin-top: 100px; /* 헤더의 높이만큼 여백 */
+
+		overflow-y: auto;
+
+		width: 100%;
+
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		position: relative;
+
+		.title {
+			width: 87%;
+			background-color: $main-color-light;
+
+			position: fixed;
+			top: 100px;
+			left: 13%;
+			height: 35px;
+			padding: 0px 20px;
+
+			z-index: 9999;
+
 			display: flex;
+			justify-content: space-between;
 			align-items: center;
-			flex-direction: row;
 
-			.modalContentWrap {
+			p {
+				@include patientInfotitle;
+				color: $white;
+			}
+
+			img {
+				cursor: pointer;
+				width: 16px;
+				height: 16px;
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+
+		.patientInfo {
+			width: 100%;
+
+			display: flex;
+			align-items: flex-start;
+			gap: 30px;
+
+			position: relative;
+			top: 35px;
+
+			padding-bottom: 30px;
+
+			.contentWrap {
+				width: 70%;
 				display: flex;
 				flex-direction: column;
-
-				gap: 40px;
-
-				.title {
-					width: 100%;
-					display: flex;
-					justify-content: space-between;
-					align-content: center;
-					padding: 20px;
-					background-color: $main-color;
-					border-top-left-radius: 20px;
-					border-top-right-radius: 20px;
-
-					p {
-						@include patientInfotitle;
-						color: $white;
-					}
-
-					img {
-						width: 20px;
-						height: 20px;
-					}
-				}
+				gap: 30px;
 
 				.info {
-					padding: 20px;
 					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
 					justify-content: space-between;
-					align-items: flex-end;
-					background-color: $bg3;
-					border-top: 1px solid #ccc;
-					border-bottom: 1px solid #ccc;
 
-					.img {
+					.infoContent {
 						width: 100%;
+
 						display: flex;
-						align-items: center;
-						gap: 40px;
+						flex-direction: column;
+						justify-content: space-between;
+						align-items: flex-end;
+						background-color: $bg3;
 
-						img {
-							width: 100px;
-							height: 100px;
-							border-radius: 50%;
-							border: 2px solid #ccc;
-						}
+						padding: 20px 30px;
 
-						.txt {
+						border-top: 1px solid #ccc;
+						border-bottom: 1px solid #ccc;
+
+						.img {
 							width: 100%;
 							display: flex;
-							flex-direction: column;
-							justify-content: center;
-							gap: 20px;
+							align-items: center;
+							gap: 40px;
 
-							.name {
-								width: 100%;
-
-								p {
-									@include patientInfoName;
-								}
+							img {
+								width: 100px;
+								height: 100px;
+								border-radius: 50%;
+								border: 2px solid #ccc;
 							}
 
-							.personalInfo {
+							.txt {
+								width: 100%;
 								display: flex;
 								flex-direction: column;
-								align-items: center;
-								gap: 10px;
+								justify-content: center;
+								gap: 20px;
 
-								.p {
+								.name {
+									width: 100%;
 									display: flex;
 									align-items: center;
 									gap: 10px;
-									width: 100%;
 
 									p {
-										@include patientInfop;
+										@include patientInfoName;
+									}
+								}
 
-										&:first-child {
-											width: 10%;
+								.personalInfo {
+									display: flex;
+									align-items: flex-start;
+									justify-content: space-between;
+
+									.first,
+									.second,
+									.third {
+										width: auto;
+										display: flex;
+										flex-direction: column;
+										gap: 10px;
+
+										.p {
+											display: flex;
+											align-items: center;
+											gap: 13px;
+
+											p {
+												@include patientInfop;
+												white-space: nowrap;
+
+												&:last-child {
+													font-weight: 400;
+													font-size: 14px;
+												}
+											}
 										}
 
-										&:last-child {
-											font-weight: 400;
-											font-size: 14px;
+										.address {
+											display: flex;
+											align-items: flex-start;
+
+											.addressTxt {
+												display: flex;
+												flex-direction: column;
+												align-items: flex-start;
+												gap: 5px;
+
+												p {
+													@include patientInfop;
+													white-space: nowrap;
+													font-weight: 400;
+													font-size: 14px;
+												}
+											}
 										}
 									}
 								}
 							}
 						}
-					}
 
-					.icons {
-						display: flex;
-						justify-content: center;
-						align-items: center;
-						gap: 15px;
+						.icons {
+							display: flex;
+							justify-content: flex-end;
+							align-items: center;
+							gap: 15px;
+							width: 100%;
 
-						button {
+							button {
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								gap: 10px;
+								background-color: $menu-color;
+								border-radius: 10px;
+								color: $white;
+								padding: 10px 15px;
+								border: 1px solid $menu-color;
+
+								@include patientInfobutton;
+
+								transition: all 0.3s;
+
+								img {
+									width: 15px;
+									height: 15px;
+								}
+
+								&:hover {
+									background-color: $white;
+									border: 1px solid $menu-color;
+									color: $menu-color;
+								}
+							}
+						}
+
+						.buttons {
+							width: 100%;
 							display: flex;
 							align-items: center;
-							justify-content: center;
+							justify-content: flex-end;
 							gap: 10px;
-							background-color: $menu-color;
-							border-radius: 10px;
-							color: $white;
-							width: 110px;
-							padding: 10px 15px;
+							margin-top: 20px;
 
-							@include patientInfobutton;
+							button {
+								width: 100px;
+								padding: 10px 0px;
+								font-weight: 500;
+								font-size: 13px;
+								border-radius: 10px;
+								background-color: $white;
+								border: 2px solid $bg;
+								transition: all 0.3s;
 
-							img {
-								width: 15px;
-								height: 15px;
+								&:hover {
+									border: 1px solid $menu-color;
+								}
 							}
 						}
 					}
@@ -453,31 +577,47 @@
 
 					ul {
 						display: flex;
-						justify-content: center;
+						justify-content: space-between;
 						align-items: center;
 						gap: 3px;
 
 						li {
-							width: (100% / 10);
-							padding: 10px;
+							width: 100%;
+							padding: 10px 0px;
 							border-top-right-radius: 10px;
 							border-top-left-radius: 10px;
 							background-color: $bg;
 							display: flex;
 							justify-content: center;
 							align-items: center;
+							cursor: pointer;
+							border: 1px solid $bg;
 
 							@include patientInfotab;
+
+							transition: all 0.3s;
+
+							&:hover {
+								background-color: $main-color-light;
+								border: 1px solid $main-color-light;
+								color: $white;
+							}
+						}
+
+						.tabSpecial {
+							font-size: 13px;
+							padding: 11px 0px;
 						}
 
 						.on {
-							background-color: $menu-color;
+							background-color: $main-color-light;
 							color: $white;
+							border: 1px solid $main-color-light;
 						}
 					}
 				}
 
-				.content {
+				.list {
 					width: 100%;
 
 					display: flex;
@@ -590,14 +730,77 @@
 						}
 					}
 				}
+
+				.bottom {
+					width: 100%;
+					height: 100%;
+					display: flex;
+					flex-direction: column;
+					gap: 15px;
+
+					.bottomTitle {
+						border: 1px solid p;
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+
+						p {
+							@include patientInfoBottom;
+						}
+
+						button {
+							padding: 8px 15px;
+							background-color: $main-color;
+							border: 2px solid $main-color;
+							transition: all 0.3s;
+							color: $white;
+
+							&:hover {
+								background-color: $white;
+								border: 2px solid $main-color;
+								color: $main-font-color;
+							}
+						}
+					}
+
+					table {
+						width: 100%;
+						border-collapse: collapse;
+
+						th,
+						td {
+							padding: 10px;
+							text-align: center;
+						}
+
+						th {
+							border-top: 1px solid #181818;
+							border-bottom: 1px solid #ccc;
+							background-color: #f2f2f2;
+							@include patientInfoTableTH;
+						}
+
+						td {
+							@include patientInfoTable;
+							border-bottom: 1px solid #ccc;
+						}
+
+						tr {
+							&:nth-child(even) {
+								background-color: #f1f1f1;
+							}
+						}
+					}
+				}
 			}
 
-			.imgWrap{
-				border: 1px solid red;
+			.imgWrap {
 				height: 100%;
+				width: 30%;
 
-				img{
-					width: 150px;
+				img {
+					width: 100%;
+					height: 100%;
 				}
 			}
 		}

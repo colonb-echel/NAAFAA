@@ -26,144 +26,31 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="menu">
+    <div class="container registrationNewMember">
+        <header class="header">
+
             <div class="logo">
-                <div class="img">
-                    <img src="./img/logo.svg" alt="로고">
-                </div>
-            </div>
-
-            <div class="search">
-                <div class="txt">
-                    <p>통합검색</p>
-                </div>
-
-                <select>
-                    <option>회원명</option>
-                    <option>연락처</option>
-                    <option>주민번호</option>
-                    <option>여권번호</option>
-                </select>
-
-                <input type="text" placeholder="검색어 입력">
-
-                <div class="button">
-                    <button>검색</button>
-                    <img src="./img/icon/search.svg" alt="검색">
-                </div>
+                <img src="./img/logo.svg" alt="로고">
             </div>
 
             <nav>
-                <ul>
-                    <li class="on">
-                        <div class="menu-title">
-                            <img src="./img/icon/star.svg" alt="즐겨찾기">
-                            <p>예약현황</p>
-                        </div>
-
-                        <div class="icon">
-                            <img src="./img/icon/menu-arrow-down.svg" alt="화살표">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="menu-title">
-                            <!-- 즐겨찾기 클릭했을 때 -->
-                            <img src="./img/icon/star-filled.svg" alt="즐겨찾기">
-                            <p>예약관리</p>
-                        </div>
-
-                        <div class="icon">
-                            <img src="./img/icon/menu-arrow-down.svg" alt="화살표">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="menu-title">
-                            <img src="./img/icon/star.svg" alt="즐겨찾기">
-                            <p>수술실 디스플레이</p>
-                        </div>
-
-                        <div class="icon">
-                            <img src="./img/icon/menu-arrow-down.svg" alt="화살표">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="menu-title">
-                            <img src="./img/icon/star.svg" alt="즐겨찾기">
-                            <p>예약대기목록</p>
-                        </div>
-
-                        <div class="icon">
-                            <img src="./img/icon/menu-arrow-down.svg" alt="화살표">
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-
-            <div class="info">
-
-                <div class="infoWrap">
-                    <div class="title">
-                        <img src="./img/logo.svg" alt="로고">
-                    </div>
-
-                    <div class="schedule">
-                        <div class="scheduleCon">
-                            <p>평일</p>
-                            <p>10:00 - 17:00</p>
-                        </div>
-
-                        <div class="scheduleCon">
-                            <p>점심</p>
-                            <p>12:00 - 13:00</p>
-                        </div>
-
-                        <div class="scheduleCon red">
-                            <p>휴무</p>
-                            <p>주말/공휴일</p>
-                        </div>
-                    </div>
-
-                    <div class="number">
-                        <p>070-1234-1234</p>
-                    </div>
-
-                    <div class="customerCenter">
-                        <button>고객센터 문의</button>
-                    </div>
-
-                    <div class="settingButton">
-                        <button>설정</button>
-                        <img src="./img/icon/setting.svg" alt="설정">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="content registrationNewMember">
-            <header>
                 <div class="txt">
+                    <p>KOR</p>
+                    <P>ENG</P>
+                    <img src="./img/icon/line.svg" alt="">
+
                     <p>회원사 문의</p>
                     <img src="./img/icon/line.svg" alt="">
                     <p>이용가이드</p>
                     <img src="./img/icon/line.svg" alt="">
 
-                    <img src="./img/icon/alarm.svg" alt="알림">
-
                     <p>
-                        <span>로봇앤컴</span> 님
+                        <span>유재석</span> 님
                     </p>
                 </div>
 
 
-                <div class="icon">
-                    <img src="./img/icon/arrow-down.svg" alt="화살표">
-                </div>
-            </header>
-
-            <div class="tabMenu">
-                <ul>
+                <ul class="tabMenu">
                     <li class="on">예약관리</li>
                     <li>환자관리</li>
                     <li>접수</li>
@@ -180,80 +67,169 @@
                     <li>통계</li>
                     <li>즐겨찾기</li>
                 </ul>
-            </div>
 
-            <main class="registrationNewMemberMain">
-                <div class="title">
-                    <div class="titleWrap">
-                        <p>신규회원 등록</p>
-                        <p class="memberSearchP"> <span>*</span> 표시는 필수 입력값입니다.</p>
-                    </div>
+            </nav>
+        </header>
 
-                    <button>등록</button>
+        <aside class="sidebar">
+            <div class="search">
+                <div class="txt">
+                    <p>통합검색</p>
                 </div>
 
-                <form>
-                    <div class="form-group">
-                        <label for="patient-name">환자명 <span>*</span></label>
-                        <input type="text" id="patient-name" required placeholder="환자명을 입력해주세요">
-                    </div>
-                    <div class="form-group">
-                        <label for="patient-contact">환자연락처 <span>*</span></label>
-                        <input type="text" id="patient-contact" required placeholder="- 없이 입력해주세요">
-                    </div>
-                    <div class="form-group">
-                        <label for="guardian-contact">보호자연락처</label>
-                        <input type="text" id="guardian-contact" placeholder="- 없이 입력해주세요">
-                    </div>
-                    <div class="form-group flex">
-                        <label>국적 <span>*</span></label>
-                        <input type="radio" id="nationality-domestic" name="nationality" value="domestic" required>
-                        <label for="nationality-domestic">내국인</label>
-                        <input type="radio" id="nationality-foreign" name="nationality" value="foreign" required>
-                        <label for="nationality-foreign">외국인</label>
-                    </div>
-                    <div class="form-group">
-                        <label for="ssn1">주민등록번호 <span>*</span></label>
-                        <input type="text" id="ssn1" required placeholder="주민등록번호 앞자리를 입력해주세요"> -
-                        <input type="text" id="ssn2" required placeholder="주민등록번호 뒷자리를 입력해주세요">
-                    </div>
-                    <div class="form-group">
-                        <label for="passport">여권번호(외국인일 경우) <span>*</span></label>
-                        <input type="text" id="passport" required placeholder="여권번호를 입력해주세요">
-                    </div>
-                    <div class="form-group">
-                        <label for="birthdate-year">생년월일</label>
-                        <select id="birthdate-year">
-                            <option>년</option>
-                        </select>
-                        <select id="birthdate-month">
-                            <option>월</option>
-                        </select>
-                        <select id="birthdate-day">
-                            <option>일</option>
-                        </select>
-                    </div>
-                    <div class="form-group flex">
-                        <label>성별 <span>*</span></label>
-                        <input type="radio" id="male" name="gender" required><label for="male">남자</label>
-                        <input type="radio" id="female" name="gender" required><label for="female">여자</label>
-                    </div>
-                    <div class="form-group flexC">
-                        <label for="address1">주소</label>
+                <select>
+                    <option>회원명</option>
+                    <option>연락처</option>
+                    <option>주민번호</option>
+                    <option>여권번호</option>
+                </select>
 
-                        <div class="input">
-                            <input type="text" id="address1" required>
-                            <input type="text" id="address2">
-                        </div>
+                <input type="text" placeholder="검색어 입력">
 
-                        <button type="button">주소검색</button>
+                <div class="button">
+                    <button>검색</button>
+                </div>
+            </div>
+
+            <ul class="menu">
+                <li class="on">
+                    <img src="./img/icon/star.svg" alt="즐겨찾기">
+                    <p>예약현황</p>
+                </li>
+                <li>
+                    <!-- 즐겨찾기 클릭했을 때 -->
+                    <img src="./img/icon/star-filled.svg" alt="즐겨찾기">
+                    <p>예약관리</p>
+                </li>
+                <li>
+                    <img src="./img/icon/star.svg" alt="즐겨찾기">
+                    <p>수술실 디스플레이</p>
+                </li>
+                <li>
+                    <img src="./img/icon/star.svg" alt="즐겨찾기">
+                    <p>예약대기목록</p>
+                </li>
+            </ul>
+
+            <div class="info">
+                <div class="title">
+                    <img src="./img/logo.svg" alt="로고">
+                </div>
+
+                <div class="schedule">
+                    <div class="scheduleCon">
+                        <p>평일</p>
+                        <p>10:00 - 17:00</p>
                     </div>
-                </form>
 
-            </main>
-        </div>
+                    <div class="scheduleCon">
+                        <p>점심</p>
+                        <p>12:00 - 13:00</p>
+                    </div>
+
+                    <div class="scheduleCon red">
+                        <p>휴무</p>
+                        <p>주말/공휴일</p>
+                    </div>
+                </div>
+
+                <div class="number">
+                    <p>Tel: 1661-7067</p>
+                    <p>Fax: 02-429-2229</p>
+                </div>
+
+                <div class="btn">
+                    <button>고객센터 문의</button>
+                </div>
+
+                <div class="btn">
+                    <button>설정</button>
+                </div>
+            </div>
+        </aside>
+
+        <main class="content registrationNewMemberMain">
+
+            <div class="title">
+                <div class="titleWrap">
+                    <p>신규회원 등록</p>
+                    <p class="memberSearchP"> <span>*</span> 표시는 필수 입력값입니다.</p>
+                </div>
+            </div>
+
+            <form>
+                <div class="form-group">
+                    <label for="patient-name">환자명 <span>*</span></label>
+                    <input type="text" id="patient-name" required placeholder="환자명을 입력해주세요">
+                </div>
+                <div class="form-group">
+                    <label for="patient-contact">환자연락처 <span>*</span></label>
+                    <input type="text" id="patient-contact" required placeholder="- 없이 입력해주세요">
+                </div>
+                <div class="form-group">
+                    <label for="guardian-contact">보호자연락처</label>
+                    <input type="text" id="guardian-contact" placeholder="- 없이 입력해주세요">
+                </div>
+
+                <div class="form-group flex">
+                    <label>국적 <span>*</span></label>
+                    <input type="radio" id="nationality-domestic" name="nationality" value="domestic" required>
+                    <label for="nationality-domestic">내국인</label>
+                    <input type="radio" id="nationality-foreign" name="nationality" value="foreign" required>
+                    <label for="nationality-foreign">외국인</label>
+                </div>
+
+                <!-- 내국인 클릭 시 주민등록번호 보여주기 -->
+                <div class="form-group age">
+                    <label for="ssn1">주민등록번호 <span>*</span></label>
+                    <input type="text" id="ssn1" required placeholder="주민등록번호 앞자리를 입력해주세요"> -
+                    <input type="text" id="ssn2" required placeholder="주민등록번호 뒷자리를 입력해주세요">
+                    <input type="text" placeholder="나이(자동입력)">
+                </div>
+
+                <!-- 외국인 클릭 시 여권번호 보여주기 -->
+                <div class="form-group" style="display: none;">
+                    <label for="passport">여권번호 <span>*</span></label>
+                    <input type="text" id="passport" required placeholder="여권번호를 입력해주세요">
+                </div>
+
+                <div class="form-group">
+                    <label for="birthdate-year">생년월일</label>
+                    <select id="birthdate-year">
+                        <option>년</option>
+                    </select>
+                    <select id="birthdate-month">
+                        <option>월</option>
+                    </select>
+                    <select id="birthdate-day">
+                        <option>일</option>
+                    </select>
+                </div>
+
+                <div class="form-group flex">
+                    <label>성별 <span>*</span></label>
+                    <input type="radio" id="male" name="gender" required><label for="male">남자</label>
+                    <input type="radio" id="female" name="gender" required><label for="female">여자</label>
+                </div>
+
+                <div class="form-group flexC">
+                    <label for="address1">주소</label>
+
+                    <div class="input">
+                        <input type="text" id="address1" required placeholder="주소를 검색해주세요">
+                        <input type="text" id="address2" placeholder="상세주소 입력">
+                    </div>
+
+                    <button type="button">주소검색</button>
+                </div>
+            </form>
+
+            <div class="button">
+                <button>취소</button>
+                <button>등록</button>
+            </div>
+        </main>
     </div>
-
 
 </body>
 

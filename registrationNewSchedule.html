@@ -26,144 +26,31 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="menu">
+    <div class="container registrationNewSchedule">
+        <header class="header">
+
             <div class="logo">
-                <div class="img">
-                    <img src="./img/logo.svg" alt="로고">
-                </div>
-            </div>
-
-            <div class="search">
-                <div class="txt">
-                    <p>통합검색</p>
-                </div>
-
-                <select>
-                    <option>회원명</option>
-                    <option>연락처</option>
-                    <option>주민번호</option>
-                    <option>여권번호</option>
-                </select>
-
-                <input type="text" placeholder="검색어 입력">
-
-                <div class="button">
-                    <button>검색</button>
-                    <img src="./img/icon/search.svg" alt="검색">
-                </div>
+                <img src="./img/logo.svg" alt="로고">
             </div>
 
             <nav>
-                <ul>
-                    <li class="on">
-                        <div class="menu-title">
-                            <img src="./img/icon/star.svg" alt="즐겨찾기">
-                            <p>예약현황</p>
-                        </div>
-
-                        <div class="icon">
-                            <img src="./img/icon/menu-arrow-down.svg" alt="화살표">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="menu-title">
-                            <!-- 즐겨찾기 클릭했을 때 -->
-                            <img src="./img/icon/star-filled.svg" alt="즐겨찾기">
-                            <p>예약관리</p>
-                        </div>
-
-                        <div class="icon">
-                            <img src="./img/icon/menu-arrow-down.svg" alt="화살표">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="menu-title">
-                            <img src="./img/icon/star.svg" alt="즐겨찾기">
-                            <p>수술실 디스플레이</p>
-                        </div>
-
-                        <div class="icon">
-                            <img src="./img/icon/menu-arrow-down.svg" alt="화살표">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="menu-title">
-                            <img src="./img/icon/star.svg" alt="즐겨찾기">
-                            <p>예약대기목록</p>
-                        </div>
-
-                        <div class="icon">
-                            <img src="./img/icon/menu-arrow-down.svg" alt="화살표">
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-
-            <div class="info">
-
-                <div class="infoWrap">
-                    <div class="title">
-                        <img src="./img/logo.svg" alt="로고">
-                    </div>
-
-                    <div class="schedule">
-                        <div class="scheduleCon">
-                            <p>평일</p>
-                            <p>10:00 - 17:00</p>
-                        </div>
-
-                        <div class="scheduleCon">
-                            <p>점심</p>
-                            <p>12:00 - 13:00</p>
-                        </div>
-
-                        <div class="scheduleCon red">
-                            <p>휴무</p>
-                            <p>주말/공휴일</p>
-                        </div>
-                    </div>
-
-                    <div class="number">
-                        <p>070-1234-1234</p>
-                    </div>
-
-                    <div class="customerCenter">
-                        <button>고객센터 문의</button>
-                    </div>
-
-                    <div class="settingButton">
-                        <button>설정</button>
-                        <img src="./img/icon/setting.svg" alt="설정">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="content registrationNewSchedule">
-            <header>
                 <div class="txt">
+                    <p>KOR</p>
+                    <P>ENG</P>
+                    <img src="./img/icon/line.svg" alt="">
+
                     <p>회원사 문의</p>
                     <img src="./img/icon/line.svg" alt="">
                     <p>이용가이드</p>
                     <img src="./img/icon/line.svg" alt="">
 
-                    <img src="./img/icon/alarm.svg" alt="알림">
-
                     <p>
-                        <span>로봇앤컴</span> 님
+                        <span>유재석</span> 님
                     </p>
                 </div>
 
 
-                <div class="icon">
-                    <img src="./img/icon/arrow-down.svg" alt="화살표">
-                </div>
-            </header>
-
-            <div class="tabMenu">
-                <ul>
+                <ul class="tabMenu">
                     <li class="on">예약관리</li>
                     <li>환자관리</li>
                     <li>접수</li>
@@ -180,14 +67,250 @@
                     <li>통계</li>
                     <li>즐겨찾기</li>
                 </ul>
+
+            </nav>
+        </header>
+
+        <aside class="sidebar">
+            <div class="search">
+                <div class="txt">
+                    <p>통합검색</p>
+                </div>
+
+                <select>
+                    <option>회원명</option>
+                    <option>연락처</option>
+                    <option>주민번호</option>
+                    <option>여권번호</option>
+                </select>
+
+                <input type="text" placeholder="검색어 입력">
+
+                <div class="button">
+                    <button>검색</button>
+                </div>
             </div>
 
-            <main class="registrationNewScheduleMain">
-                
-            </main>
-        </div>
-    </div>
+            <ul class="menu">
+                <li class="on">
+                    <img src="./img/icon/star.svg" alt="즐겨찾기">
+                    <p>예약현황</p>
+                </li>
+                <li>
+                    <!-- 즐겨찾기 클릭했을 때 -->
+                    <img src="./img/icon/star-filled.svg" alt="즐겨찾기">
+                    <p>예약관리</p>
+                </li>
+                <li>
+                    <img src="./img/icon/star.svg" alt="즐겨찾기">
+                    <p>수술실 디스플레이</p>
+                </li>
+                <li>
+                    <img src="./img/icon/star.svg" alt="즐겨찾기">
+                    <p>예약대기목록</p>
+                </li>
+            </ul>
 
+            <div class="info">
+                <div class="title">
+                    <img src="./img/logo.svg" alt="로고">
+                </div>
+
+                <div class="schedule">
+                    <div class="scheduleCon">
+                        <p>평일</p>
+                        <p>10:00 - 17:00</p>
+                    </div>
+
+                    <div class="scheduleCon">
+                        <p>점심</p>
+                        <p>12:00 - 13:00</p>
+                    </div>
+
+                    <div class="scheduleCon red">
+                        <p>휴무</p>
+                        <p>주말/공휴일</p>
+                    </div>
+                </div>
+
+                <div class="number">
+                    <p>Tel: 1661-7067</p>
+                    <p>Fax: 02-429-2229</p>
+                </div>
+
+                <div class="btn">
+                    <button>고객센터 문의</button>
+                </div>
+
+                <div class="btn">
+                    <button>설정</button>
+                </div>
+            </div>
+        </aside>
+
+        <main class="content registrationNewScheduleMain">
+
+            <div class="title">
+                <div class="titleWrap">
+                    <p>스케줄 지정</p>
+                </div>
+            </div>
+
+            <!-- 한국인 일 경우 -->
+            <div class="info">
+                <div class="img">
+                    <img src="../img/women.png" alt="여성">
+
+                    <div class="txt">
+                        <div class="name">
+                            <p>김태희</p>
+                        </div>
+
+                        <div class="personalInfo">
+                            <div class="p">
+                                <p>생년월일</p>
+                                <p>1988년 04월 21일</p>
+                            </div>
+
+                            <div class="p">
+                                <p>연락처</p>
+                                <p>010-5234-5612</p>
+                            </div>
+
+                            <div class="p">
+                                <p>성별</p>
+                                <p>여성</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 외국인 일 경우  -->
+            <div class="info" style="display: none;">
+                <div class="img">
+                    <img src="../img/men.png" alt="남성">
+
+                    <div class="txt">
+                        <div class="name">
+                            <p>James Oliver</p>
+                        </div>
+
+                        <div class="personalInfo">
+                            <div class="p">
+                                <p>생년월일</p>
+                                <p>1994년 08월 11일</p>
+                            </div>
+
+                            <div class="p">
+                                <p>성별</p>
+                                <p>남성</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="formWrap">
+                <div class="form-group">
+                    <label>담당직원</label>
+                    <input type="text" placeholder="직원명을 입력해주세요">
+                </div>
+
+                <div class="form-group">
+                    <label>날짜</label>
+                    <input type="date">
+                    <button>오늘</button>
+                </div>
+
+                <div class="form-group">
+                    <label>시간</label>
+                    <select>
+                        <option value="시">시</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="01">01</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                    </select>
+                    <select>
+                        <option value="분">분</option>
+                        <option value="00">00</option>
+                        <option value="30">30</option>
+                    </select>
+                </div>
+
+                <div class="filter-category">
+                    <p>스케줄</p>
+                    <label><input type="radio" name="type" value="reservation">
+                        <p class="reservation">예약</p>
+                    </label>
+                    <label><input type="radio" name="type" value="consultation">
+                        <p class="consultation">상담</p>
+                    </label>
+                    <label><input type="radio" name="type" value="outpatient">
+                        <p class="outpatient">외래</p>
+                    </label>
+                    <label><input type="radio" name="type" value="treatment">
+                        <p class="treatment">치료</p>
+                    </label>
+                    <label><input type="radio" name="type" value="surgery">
+                        <p class="surgery">수술</p>
+                    </label>
+                    <label><input type="radio" name="type" value="surgery-progress">
+                        <p class="surgery-progress">수술경과</p>
+                    </label>
+                    <label><input type="radio" name="type" value="admission">
+                        <p class="admission">당일입원</p>
+                    </label>
+                </div>
+
+                <!-- [예약] 선택시 나타나는 항목 -->
+                <div class="reserv" style="display: none;">
+                    <div class="form-group">
+                        <label>유형</label>
+
+                        <input type="radio" id="faceToFace" name="reservType">
+                        <label for="faceToFace">대면</label>
+
+                        <input type="radio" id="nonFaceToFace" name="reservType">
+                        <label for="nonFaceToFace">비대면</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label>증상메모</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="button">
+                <button>취소</button>
+                <button>등록</button>
+            </div>
+        </main>
+    </div>
 
 </body>
 

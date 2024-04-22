@@ -111,7 +111,6 @@
 }
 
 // main - title
-
 @mixin title {
 	font-family: "Noto Sans KR", sans-serif;
 	font-weight: 500;
@@ -249,9 +248,8 @@
 @mixin patientInfotitle {
 	font-family: "Noto Sans KR", sans-serif;
 	font-weight: 600;
-	font-size: 18px;
+	font-size: 16px;
 	letter-spacing: -1%;
-	line-height: 16px;
 	color: $grey6;
 }
 
@@ -260,7 +258,6 @@
 	font-weight: 700;
 	font-size: 20px;
 	letter-spacing: -1%;
-	line-height: 16px;
 	color: $grey6;
 }
 
@@ -279,6 +276,8 @@
 	font-size: 14px;
 	letter-spacing: -1%;
 	color: $grey6;
+	word-break: keep-all;
+	text-align: center;
 }
 
 @mixin patientInfobutton {
@@ -301,6 +300,36 @@
 	font-size: 14px;
 	letter-spacing: -1%;
 	word-break: keep-all;
+}
+
+@mixin floatingTitle {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	word-break: keep-all;
+}
+
+@mixin floatingRoom {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	word-break: keep-all;
+}
+
+@mixin floatingPatient {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 700;
+	font-size: 22px;
+	word-break: keep-all;
+	color: $white;
+}
+
+@mixin floatingButton {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	word-break: keep-all;
+	color: $main-font-color;
 }
 
 // Login
@@ -328,4 +357,47 @@
 	font-size: 15px;
 	letter-spacing: -1%;
 	word-break: keep-all;
+}
+
+// searchMember
+@mixin searchMemberTitle {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 700;
+	font-size: 28px;
+	word-break: keep-all;
+}
+
+@mixin searchMemberNationality {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	word-break: keep-all;
+	color: $main-font-color;
+}
+
+@mixin searchMemberLabel {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 700;
+	font-size: 13px;
+	word-break: keep-all;
+	color: $main-font-color;
+}
+
+@mixin searchMemberButton {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 700;
+	font-size: 12px;
+	word-break: keep-all;
+	color: $menu-color;
+	line-height: 12px;
+}
+
+// Modal - Patient Information
+@mixin patientInfoBottom {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	word-break: keep-all;
+	color: $main-font-color;
+	line-height: 12px;
 }

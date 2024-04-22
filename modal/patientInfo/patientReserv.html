@@ -217,8 +217,8 @@
 
                     <div class="tab">
                         <ul>
-                            <li class="on">기본정보</li>
-                            <li>예약현황</li>
+                            <li>기본정보</li>
+                            <li class="on">예약현황</li>
                             <li>상담차트</li>
                             <li>진료기록</li>
                             <li class="tabSpecial">수술/시술 이력</li>
@@ -230,7 +230,7 @@
                         </ul>
                     </div>
 
-                    <div class="list" style="display: none;">
+                    <div class="list">
                         <div class="filter-container">
                             <select id="orderSelect">
                                 <option value="newest">최신순</option>
@@ -261,101 +261,81 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>4</td>
+                                    <td>9</td>
                                     <td>예약</td>
                                     <td>앱예약</td>
                                     <td>대면</td>
                                     <td>2024-04-01 16:00</td>
-                                    <td>눈 치료 증상 메모가 길 경우는 이렇게 나와요. 어떻게 나오냐구요? 이렇게 나와요. 이렇게 나와도 되는지 잘 모르겠어요.</td>
-                                    <td>2024-01-01 16:00</td>
-                                    <td>2024-01-23 16:00</td>
+                                    <td>-</td>
+                                    <td>2024-03-31 10:30</td>
+                                    <td>-</td>
                                     <td><button>취소</button></td>
                                 </tr>
 
                                 <tr>
-                                    <td>3</td>
+                                    <td>8</td>
+                                    <td>예약</td>
+                                    <td>병원예약</td>
+                                    <td>대면</td>
+                                    <td>2024-03-24 11:00</td>
+                                    <td>눈 치료</td>
+                                    <td>2024-03-06 14:30</td>
+                                    <td>-</td>
+                                    <td><button>취소</button></td>
+                                </tr>
+
+                                <tr>
+                                    <td>7</td>
                                     <td>취소</td>
                                     <td>앱예약</td>
                                     <td>비대면</td>
-                                    <td>2024-04-01 16:00</td>
+                                    <td>2024-03-24 11:00</td>
                                     <td>-</td>
-                                    <td>2024-01-01 16:00</td>
+                                    <td>2024-03-05 21:30</td>
+                                    <td>2024-03-05 23:00</td>
+                                    <td>-</td>
+                                </tr>
+
+                                <tr>
+                                    <td>6</td>
+                                    <td>예약</td>
+                                    <td>병원예약</td>
+                                    <td>대면</td>
+                                    <td>2024-02-21 10:00</td>
+                                    <td>무릎 부상</td>
+                                    <td>2024-02-17 15:30</td>
                                     <td>-</td>
                                     <td><button>취소</button></td>
                                 </tr>
 
                                 <tr>
-                                    <td>2</td>
-                                    <td>예약</td>
+                                    <td>5</td>
+                                    <td>취소</td>
                                     <td>앱예약</td>
-                                    <td>대면</td>
-                                    <td>2024-04-01 16:00</td>
-                                    <td>눈 치료</td>
-                                    <td>2024-01-01 16:00</td>
-                                    <td>2024-01-23 16:00</td>
-                                    <td><button>취소</button></td>
-                                </tr>
-
-                                <tr>
-                                    <td>1</td>
-                                    <td>예약</td>
-                                    <td>앱예약</td>
-                                    <td>대면</td>
-                                    <td>2024-04-01 16:00</td>
-                                    <td>눈 치료</td>
-                                    <td>2024-01-01 16:00</td>
-                                    <td>2024-01-23 16:00</td>
-                                    <td><button>취소</button></td>
+                                    <td>비대면</td>
+                                    <td>2024-02-17 12:00</td>
+                                    <td>-</td>
+                                    <td>2024-02-11 18:00</td>
+                                    <td>2024-02-15 16:00</td>
+                                    <td>-</td>
                                 </tr>
                             </tbody>
                         </table>
 
                         <div class="pagination">
-                            <a href="#">&laquo;</a>
-                            <a href="#">1</a>
-                            <a href="#" class="active">2</a>
+                            <a href="#">
+                                <img src="../../img/icon/arrow-left-color.svg" alt="좌측화살표">
+                            </a>
+                            <a href="#"  class="on">1</a>
+                            <a href="#">2</a>
                             <a href="#">3</a>
                             <a href="#">4</a>
                             <a href="#">5</a>
                             <a href="#">6</a>
-                            <a href="#">&raquo;</a>
+                            <a href="#">
+                                <img src="../../img/icon/arrow-right-color.svg" alt="우측화살표">
+                            </a>
                         </div>
-                    </div>
-
-                    <div class="bottom">
-                        <div class="bottomTitle">
-                            <p>환자 관련 메모</p>
-                            <button>메모추가</button>
-                        </div>
-
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>번호</th>
-                                    <th>작성자</th>
-                                    <th>직종</th>
-                                    <th>내용보기</th>
-                                    <th>등록일</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>2</td>
-                                    <td>김고은</td>
-                                    <td>실장</td>
-                                    <td>코수술 진행건은 가족에게 비밀유지</td>
-                                    <td>2024-01-02</td>
-                                </tr>
-
-                                <tr>
-                                    <td>1</td>
-                                    <td>이수지</td>
-                                    <td>실장</td>
-                                    <td>코수술 예약 희망 예약일시 2024-01-02 09:30, 희망의사선생님 - 유재석</td>
-                                    <td>2024-01-01</td>
-                                </tr>
-                            </tbody>
-                        </table>
                     </div>
 
                 </div>

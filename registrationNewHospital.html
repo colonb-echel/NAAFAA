@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>나아파 어드민</title>
+
+    <meta name="keyword" content="나아파">
+    <meta name="description" content="나아파">
+    <meta name="author" content="나아파">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Google Material Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+    </style>
+
+</head>
+
+<body>
+    <div class="container registrationNewHospital">
+        <header class="header">
+
+            <div class="logo">
+                <img src="./img/logo.svg" alt="로고">
+            </div>
+
+            <nav>
+                <div class="txt">
+                    <p>KOR</p>
+                    <P>ENG</P>
+                    <img src="./img/icon/line.svg" alt="">
+
+                    <p>회원사 문의</p>
+                    <img src="./img/icon/line.svg" alt="">
+                    <p>이용가이드</p>
+                    <img src="./img/icon/line.svg" alt="">
+
+                    <p>
+                        <span>유재석</span> 님
+                    </p>
+                </div>
+
+
+                <ul class="tabMenu">
+                    <li class="on">예약관리</li>
+                    <li>환자관리</li>
+                    <li>접수</li>
+                    <li>상담</li>
+                    <li>진료</li>
+                    <li>시술/수술</li>
+                    <li>처방</li>
+                    <li>AI 약식별</li>
+                    <li>수납관리</li>
+                    <li>마케팅</li>
+                    <li>원무행정</li>
+                    <li>보건행정</li>
+                    <li>콜센터</li>
+                    <li>통계</li>
+                    <li>즐겨찾기</li>
+                </ul>
+
+            </nav>
+        </header>
+
+        <aside class="sidebar">
+            <div class="search">
+                <div class="txt">
+                    <p>통합검색</p>
+                </div>
+
+                <select>
+                    <option>회원명</option>
+                    <option>연락처</option>
+                    <option>주민번호</option>
+                    <option>여권번호</option>
+                </select>
+
+                <input type="text" placeholder="검색어 입력">
+
+                <div class="button">
+                    <button>검색</button>
+                </div>
+            </div>
+
+            <ul class="menu">
+                <li class="on">
+                    <img src="./img/icon/star.svg" alt="즐겨찾기">
+                    <p>예약현황</p>
+                </li>
+                <li>
+                    <!-- 즐겨찾기 클릭했을 때 -->
+                    <!-- <img src="./img/icon/star-filled.svg" alt="즐겨찾기"> -->
+                    <img src="./img/icon/star.svg" alt="즐겨찾기">
+
+                    <p>예약관리</p>
+                </li>
+                <li>
+                    <img src="./img/icon/star.svg" alt="즐겨찾기">
+                    <p>수술실 디스플레이</p>
+                </li>
+                <li>
+                    <img src="./img/icon/star.svg" alt="즐겨찾기">
+                    <p>예약대기목록</p>
+                </li>
+            </ul>
+
+            <div class="info">
+                <div class="title">
+                    <img src="./img/logo.svg" alt="로고">
+                </div>
+
+                <div class="schedule">
+                    <div class="scheduleCon">
+                        <p>평일</p>
+                        <p>10:00 - 17:00</p>
+                    </div>
+
+                    <div class="scheduleCon">
+                        <p>점심</p>
+                        <p>12:00 - 13:00</p>
+                    </div>
+
+                    <div class="scheduleCon red">
+                        <p>휴무</p>
+                        <p>주말/공휴일</p>
+                    </div>
+                </div>
+
+                <div class="number">
+                    <p>Tel: 1661-7067</p>
+                    <p>Fax: 02-429-2229</p>
+                </div>
+
+                <div class="btn">
+                    <button>고객센터 문의</button>
+                </div>
+
+                <div class="btn">
+                    <button>설정</button>
+                </div>
+            </div>
+        </aside>
+
+        <main class="content registrationNewHospitalMain">
+            <div class="title">
+                <p>신규 병원 정보 등록</p>
+            </div>
+
+            <section>
+                <div class="titleTxt">
+                    <p>사업자등록증정보</p>
+                </div>
+
+                <div class="inputWrap">
+                    <p>상호명</p>
+                    <input type="text" placeholder="상호명을 입력해주세요">
+                </div>
+
+                <div class="inputWrap">
+                    <p>대표자명</p>
+                    <input type="text" placeholder="대표자명을 입력해주세요">
+                </div>
+
+                <div class="inputWrap">
+                    <p>사업자번호</p>
+                    <input type="text" placeholder="사업자번호를 입력해주세요 (숫자만 입력 가능)">
+                </div>
+
+                <div class="inputWrap">
+                    <p>사업자등록증</p>
+                    <input type="file">
+                </div>
+            </section>
+
+            <section>
+                <div class="titleTxt">
+                    <p>기본정보</p>
+                </div>
+
+                <div class="inputWrap">
+                    <p>병원 연락처</p>
+                    <input type="text" placeholder="병원 연락처를 입력해주세요 (숫자만 입력 가능)">
+                </div>
+
+                <div class="inputWrap">
+                    <p>대표자 연락처</p>
+                    <input type="text" placeholder="대표자 연락처를 입력해주세요 (숫자만 입력 가능)">
+                </div>
+
+                <div class="inputWrap">
+                    <p>해외환자 진료여부</p>
+
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="option" value="possible" checked>
+                            가능
+                        </label>
+                        <label>
+                            <input type="radio" name="option" value="impossible">
+                            불가능
+                        </label>
+                    </div>
+                </div>
+
+                <div class="inputWrap">
+                    <div class="txt">
+                        <p>서비스유형 가능여부</p>
+                        <span>(중복선택가능)</span>
+                    </div>
+
+                    <div class="check">
+                        <label>
+                            <input type="checkbox">
+                            방문예약가능
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            비대면상담 예약 가능
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            왕진 예약 가능
+                        </label>
+                    </div>
+                </div>
+
+                <div class="inputWrap">
+                    <div class="txt">
+                        <p>대표이미지 추가</p>
+                        <span>(최대 3개까지 업로드 가능)</span>
+                    </div>
+
+                    <div class="imgUpload">
+                        <div class="preview-box"></div>
+                        <label class="custom-file-upload">
+                            <input type="file" multiple accept="image/*" onchange="previewImages()">
+                            파일 업로드
+                        </label>
+                    </div>
+                </div>
+
+                <div class="inputWrap">
+                    <p>병원 주소</p>
+
+                    <div class="inputAddress">
+                        <div class="input">
+                            <input type="text">
+                            <button>검색</button>
+                        </div>
+                        <input type="text">
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="titleTxt">
+                    <p>병원소개</p>
+                </div>
+
+                <div class="inputWrap">
+                    <p>진료시간</p>
+
+                    <div class="schedule">
+                        <div class="scheduleWrap">
+                            <p>휴게시간 (점심)</p>
+
+                            <select>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                            </select>
+
+                            <select>
+                                <option value="00">00</option>
+                                <option value="30">30</option>
+                            </select>
+
+                            <span>~</span>
+
+                            <select>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                            </select>
+
+                            <select>
+                                <option value="00">00</option>
+                                <option value="30">30</option>
+                            </select>
+                        </div>
+
+                        <div class="scheduleWrap">
+                            <p>월요일</p>
+
+                            <select>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                            </select>
+
+                            <select>
+                                <option value="00">00</option>
+                                <option value="30">30</option>
+                            </select>
+
+                            <span>~</span>
+
+                            <select>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                            </select>
+
+                            <select>
+                                <option value="00">00</option>
+                                <option value="30">30</option>
+                            </select>
+
+                            <label>
+                                <input type="checkbox" name="holiday">
+                                휴무
+                            </label>
+                        </div>
+
+                        <div class="scheduleWrap">
+                            <p>화요일</p>
+
+                            <select>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                            </select>
+
+                            <select>
+                                <option value="00">00</option>
+                                <option value="30">30</option>
+                            </select>
+
+                            <span>~</span>
+
+                            <select>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                            </select>
+
+                            <select>
+                                <option value="00">00</option>
+                                <option value="30">30</option>
+                            </select>
+
+                            <label>
+                                <input type="checkbox" name="holiday">
+                                휴무
+                            </label>
+                        </div>
+
+                        <div class="scheduleWrap">
+                            <p>수요일</p>
+
+                            <select>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                            </select>
+
+                            <select>
+                                <option value="00">00</option>
+                                <option value="30">30</option>
+                            </select>
+
+                            <span>~</span>
+
+                            <select>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                            </select>
+
+                            <select>
+                                <option value="00">00</option>
+                                <option value="30">30</option>
+                            </select>
+
+                            <label>
+                                <input type="checkbox" name="holiday">
+                                휴무
+                            </label>
+                        </div>
+
+                        <div class="scheduleWrap">
+                            <p>목요일</p>
+
+                            <select>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                            </select>
+
+                            <select>
+                                <option value="00">00</option>
+                                <option value="30">30</option>
+                            </select>
+
+                            <span>~</span>
+
+                            <select>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                            </select>
+
+                            <select>
+                                <option value="00">00</option>
+                                <option value="30">30</option>
+                            </select>
+
+                            <label>
+                                <input type="checkbox" name="holiday">
+                                휴무
+                            </label>
+                        </div>
+
+                        <div class="scheduleWrap">
+                            <p>금요일</p>
+
+                            <select>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                            </select>
+
+                            <select>
+                                <option value="00">00</option>
+                                <option value="30">30</option>
+                            </select>
+
+                            <span>~</span>
+
+                            <select>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                            </select>
+
+                            <select>
+                                <option value="00">00</option>
+                                <option value="30">30</option>
+                            </select>
+
+                            <label>
+                                <input type="checkbox" name="holiday">
+                                휴무
+                            </label>
+                        </div>
+
+                        <div class="scheduleWrap">
+                            <p class="textBlue">토요일</p>
+
+                            <select>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                            </select>
+
+                            <select>
+                                <option value="00">00</option>
+                                <option value="30">30</option>
+                            </select>
+
+                            <span>~</span>
+
+                            <select>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                            </select>
+
+                            <select>
+                                <option value="00">00</option>
+                                <option value="30">30</option>
+                            </select>
+
+                            <label>
+                                <input type="checkbox" name="holiday">
+                                휴무
+                            </label>
+                        </div>
+
+                        <div class="scheduleWrap">
+                            <p class="textRed">일요일</p>
+
+                            <select>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                            </select>
+
+                            <select>
+                                <option value="00">00</option>
+                                <option value="30">30</option>
+                            </select>
+
+                            <span>~</span>
+
+                            <select>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                            </select>
+
+                            <select>
+                                <option value="00">00</option>
+                                <option value="30">30</option>
+                            </select>
+
+                            <label>
+                                <input type="checkbox" name="holiday">
+                                휴무
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inputWrap">
+                    <p>병원 소개글</p>
+                    <div class="space"></div>
+                </div>
+
+                <div class="inputWrap">
+                    <p>진료과</p>
+
+                    <div class="select">
+                        <select name="department">
+                            <optgroup label="내과">
+                                <option value="internal-medicine">내과</option>
+                                <option value="pediatrics">소아청소년과</option>
+                                <option value="neurology">신경과</option>
+                                <option value="psychiatry">정신건강의학과</option>
+                                <option value="family-medicine">가정의학과</option>
+                            </optgroup>
+                            <optgroup label="외과">
+                                <option value="surgery">외과</option>
+                                <option value="gynecology">산부인과</option>
+                                <option value="orthopedics">정형외과</option>
+                                <option value="otolaryngology">이비인후과</option>
+                                <option value="ophthalmology">안과</option>
+                                <option value="urology">비뇨기과</option>
+                                <option value="neurosurgery">신경외과</option>
+                                <option value="rehabilitation">재활의학과</option>
+                                <option value="plastic-surgery">성형외과</option>
+                                <option value="cardiothoracic-surgery">심혈관흉부외과</option>
+                            </optgroup>
+                            <optgroup label="기타 전문과">
+                                <option value="dentistry">치과</option>
+                                <option value="radiology">영상의학과 (방사선과)</option>
+                                <option value="anesthesiology">마취통증의학과</option>
+                                <option value="pathology">병리과</option>
+                                <option value="emergency-medicine">응급의학과</option>
+                                <option value="dermatology">피부과</option>
+                                <option value="allergology">알레르기과</option>
+                                <option value="oriental-medicine">한방</option>
+                                <option value="diagnostic-medicine">진단검사의학과</option>
+                                <option value="Pathology">병리과</option>
+                                <option value="nuclear-medicine">핵의학과</option>
+                                <option value="radiation-oncology">방사선종양학과</option>
+                            </optgroup>
+                        </select>
+
+                        <div class="selectTxt">
+                            <div class="selectTxtCon">
+                                <span>내과</span>
+                                <img src="./img/icon/closeGrey.svg" alt="삭제">
+                            </div>
+                            <div class="selectTxtCon">
+                                <span>성형외과</span>
+                                <img src="./img/icon/closeGrey.svg" alt="삭제">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="inputWrap">
+                    <p>대표 키워드</p>
+                    <input type="text" placeholder="대표키워드 ,(쉼표) 또는 띄어쓰기로 구분해주세요. (최대 24개까지 입력)">
+                </div>
+
+
+
+                <div class="bottomTxt">
+                    <label>
+                        <input type="checkbox">
+                        병원 등록 시 제공하신 정보가 사실과 다를 경우, 사전 통보 없이 등록이 취소될 수 있습니다.
+                    </label>
+                </div>
+
+                <div class="btn">
+                    <button>취소</button>
+                    <button>등록</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>

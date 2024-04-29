@@ -332,6 +332,136 @@
 	color: $main-font-color;
 }
 
+// 메인 - 체험판
+@mixin trialTxt {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 20px;
+	word-break: keep-all;
+	color: $red;
+}
+
+@mixin trialTxtSub {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 14px;
+	word-break: keep-all;
+	color: $main-font-color;
+}
+
+@mixin welcomeTxt {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 20px;
+	word-break: keep-all;
+	color: $main-font-color;
+}
+
+@mixin welcomeSub {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 14px;
+	word-break: keep-all;
+	color: $main-font-color;
+}
+
+@mixin welcomeBtn {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	word-break: keep-all;
+	color: $white;
+}
+
+// registrationNewHospital
+@mixin registrationNewHospitalTitle {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	word-break: keep-all;
+	color: $main-font-color;
+}
+
+@mixin inputWrap {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	word-break: keep-all;
+	color: $main-font-color;
+}
+
+@mixin inputWrapTxt {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	word-break: keep-all;
+	color: $main-font-color;
+}
+
+// inviteCodeEnter
+@mixin inviteCodeEnterTitle {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 20px;
+	word-break: keep-all;
+	color: $main-font-color;
+	text-align: center;
+}
+
+// 인력 관리 페이지 searchStaff
+@mixin title02 {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	letter-spacing: -1%;
+	line-height: 18px;
+	color: $grey6;
+}
+
+@mixin title-span {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 700;
+	font-size: 13px;
+	letter-spacing: -1%;
+	line-height: 13px;
+	color: $main-color;
+}
+
+@mixin input {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	letter-spacing: -1%;
+	line-height: 13px;
+	color: $grey6;
+}
+
+@mixin label {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	letter-spacing: -1%;
+	line-height: 17.47px;
+	color: $grey6;
+}
+
+@mixin td {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: -1%;
+	line-height: 20.27px;
+	color: $grey5;
+}
+
 // Login
 @mixin logintitle {
 	font-family: "Noto Sans KR", sans-serif;
@@ -400,4 +530,46 @@
 	word-break: keep-all;
 	color: $main-font-color;
 	line-height: 12px;
+}
+
+// Modal - Patient Information - Payment
+@mixin patientInfoPay {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	word-break: keep-all;
+	color: $main-font-color;
+}
+
+// join
+@mixin joinMainTitle {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	word-break: keep-all;
+	color: $main-font-color;
+}
+
+@mixin joinMainBox {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	word-break: keep-all;
+	color: $main-font-color;
+}
+
+@mixin joinMainStaff {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	word-break: keep-all;
+	color: $main-font-color;
+}
+
+@mixin joinMainButton {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	word-break: keep-all;
+	color: $main-font-color;
 }

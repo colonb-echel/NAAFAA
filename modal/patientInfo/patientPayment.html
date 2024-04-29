@@ -211,7 +211,7 @@
                                     <img src="../../img/icon/infoEdit.png" alt="예약">
                                 </button>
                             </div>
-                            
+
                             <div class="buttons">
                                 <button>상담차트작성</button>
                                 <button>진료차트작성</button>
@@ -225,106 +225,131 @@
                     <div class="tab">
                         <ul>
                             <li>기본정보</li>
-                            <li class="on">예약현황</li>
+                            <li>예약현황</li>
                             <li>상담차트</li>
                             <li>진료기록</li>
                             <li class="tabSpecial">수술/시술 이력</li>
                             <li>처방이력</li>
                             <li>약 내역</li>
-                            <li>수납이력</li>
+                            <li class="on">수납이력</li>
                             <li>히스토리</li>
                             <li>검진</li>
                         </ul>
                     </div>
 
-                    <div class="list">
-                        <div class="filter-container">
-                            <select id="orderSelect">
-                                <option value="newest">최신순</option>
-                                <option value="oldest">오래된순</option>
-                            </select>
-                            <select id="viewCountSelect">
-                                <option value="5">5개씩 보기</option>
-                                <option value="10">10개씩 보기</option>
-                                <option value="15">15개씩 보기</option>
-                                <option value="20">20개씩 보기</option>
-                                <option value="30">30개씩 보기</option>
-                            </select>
+                    <div class="payment">
+                        <div class="pay blue">
+                            <p>전체결제총액</p>
+                            <p>830,000 원</p>
                         </div>
 
+                        <div class="pay green">
+                            <p>수납금액</p>
+                            <p>500,000 원</p>
+                        </div>
+
+                        <div class="pay yellow">
+                            <p>미수금액</p>
+                            <p>550,000 원</p>
+                        </div>
+
+                        <div class="pay red">
+                            <p>취소금액</p>
+                            <p>50,000 원</p>
+                        </div>
+
+                        <div class="pay purple">
+                            <p>할인금액</p>
+                            <p>160,000 원</p>
+                        </div>
+                    </div>
+
+                    <div class="list paymentList">
                         <table>
                             <thead>
                                 <tr>
                                     <th>번호</th>
-                                    <th>상태</th>
-                                    <th>구분</th>
-                                    <th>방식</th>
-                                    <th>예약일시</th>
-                                    <th class="setWidth">증상메모</th>
-                                    <th>등록일시</th>
-                                    <th>취소일</th>
-                                    <th>취소</th>
+                                    <th>서비스 유형</th>
+                                    <th>결제 유형</th>
+                                    <th>결제수단</th>
+                                    <th>전체 결제총액</th>
+                                    <th>수납 금액</th>
+                                    <th>미수 금액</th>
+                                    <th>결제 취소금액</th>
+                                    <th>할인 금액</th>
+                                    <th>메모</th>
+                                    <th>등록일</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>9</td>
-                                    <td>예약</td>
-                                    <td>앱예약</td>
-                                    <td>대면</td>
-                                    <td>2024-04-01 16:00</td>
+                                    <td>코, 눈</td>
+                                    <td>결제완료</td>
+                                    <td>신용카드</td>
+                                    <td>1,000,000</td>
+                                    <td>900,000</td>
                                     <td>-</td>
-                                    <td>2024-03-31 10:30</td>
                                     <td>-</td>
-                                    <td><button>취소</button></td>
+                                    <td>100,000</td>
+                                    <td>-</td>
+                                    <td>2024-01-01 15:00</td>
                                 </tr>
 
                                 <tr>
                                     <td>8</td>
-                                    <td>예약</td>
-                                    <td>병원예약</td>
-                                    <td>대면</td>
-                                    <td>2024-03-24 11:00</td>
-                                    <td>눈 치료</td>
-                                    <td>2024-03-06 14:30</td>
+                                    <td>지방흡입</td>
+                                    <td>미수결제</td>
+                                    <td>현금(현금영수증 발행)</td>
+                                    <td>2,000,000</td>
+                                    <td>1,000,000</td>
                                     <td>-</td>
-                                    <td><button>취소</button></td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>지난방문때 100만원 결제했음</td>
+                                    <td>2024-01-01 15:00</td>
                                 </tr>
 
                                 <tr>
                                     <td>7</td>
-                                    <td>취소</td>
-                                    <td>앱예약</td>
-                                    <td>비대면</td>
-                                    <td>2024-03-24 11:00</td>
+                                    <td>지방이식</td>
+                                    <td>미수</td>
                                     <td>-</td>
-                                    <td>2024-03-05 21:30</td>
-                                    <td>2024-03-05 23:00</td>
+                                    <td>800,000</td>
+                                    <td>0</td>
+                                    <td>700,000</td>
                                     <td>-</td>
+                                    <td>100,000</td>
+                                    <td>수술 경과 지켜본 후 결제 희망</td>
+                                    <td>2024-01-01 15:00</td>
                                 </tr>
 
                                 <tr>
                                     <td>6</td>
-                                    <td>예약</td>
-                                    <td>병원예약</td>
-                                    <td>대면</td>
-                                    <td>2024-02-21 10:00</td>
-                                    <td>무릎 부상</td>
-                                    <td>2024-02-17 15:30</td>
+                                    <td>주름</td>
+                                    <td>결제취소</td>
+                                    <td>현금(현금영수증 발행)</td>
+                                    <td>110,000</td>
+                                    <td>10,000</td>
                                     <td>-</td>
-                                    <td><button>취소</button></td>
+                                    <td>110,000</td>
+                                    <td>20,000</td>
+                                    <td>-</td>
+                                    <td>-</td>
                                 </tr>
 
                                 <tr>
                                     <td>5</td>
-                                    <td>취소</td>
-                                    <td>앱예약</td>
-                                    <td>비대면</td>
-                                    <td>2024-02-17 12:00</td>
+                                    <td>안검하수</td>
+                                    <td>결제완료</td>
+                                    <td>무통장입금</td>
+                                    <td>60,000</td>
+                                    <td>10,000</td>
                                     <td>-</td>
-                                    <td>2024-02-11 18:00</td>
-                                    <td>2024-02-15 16:00</td>
-                                    <td>-</td>
+                                    <td>50,000</td>
+                                    <td>20,000</td>
+                                    <td>신한은행 110-123-123456 으로 계좌이체</td>
+                                    <td>2024-01-01 15:00</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -333,7 +358,7 @@
                             <a href="#">
                                 <img src="../../img/icon/arrow-left-color.svg" alt="좌측화살표">
                             </a>
-                            <a href="#"  class="on">1</a>
+                            <a href="#" class="on">1</a>
                             <a href="#">2</a>
                             <a href="#">3</a>
                             <a href="#">4</a>

@@ -168,6 +168,63 @@
 				}
 			}
 
+			.txt {
+				display: flex;
+				flex-direction: column;
+
+				p {
+					text-align: center;
+				}
+
+				.mainTxt {
+					font-weight: 700;
+					color: $red;
+					font-size: 18px;
+					margin-top: 30px;
+					margin-bottom: 5px;
+				}
+
+				.mainTxtSub {
+					font-size: 14px;
+				}
+			}
+
+			.inviteCode {
+				margin: 0 auto;
+				margin-top: 20px;
+
+				width: 80%;
+				border: 2px solid #ddd;
+
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 20px;
+
+				padding: 70px 20px;
+				border-radius: 20px;
+
+				.codeCon {
+					width: 100%;
+
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					gap: 10px;
+
+					p {
+						font-size: 20px;
+						font-weight: 700;
+					}
+
+					img {
+						width: 24px;
+						height: 24px;
+						cursor: pointer;
+					}
+				}
+			}
+
 			.button {
 				margin-top: 30px;
 				width: 100%;
@@ -184,6 +241,7 @@
 					font-weight: 600;
 					font-size: 15px;
 					color: $main-font-color;
+					border-radius: 10px;
 
 					&:last-child {
 						background-color: $main-color;
@@ -314,6 +372,29 @@
 					padding: 15px 40px;
 					color: $white;
 				}
+			}
+		}
+	}
+
+	// 직원 초대 모달
+	.modalInvite {
+		width: 30vw;
+
+		.modal-content {
+
+			.modalImg{
+				left: calc(50% - 60px);
+			}
+
+
+			.modalTitle {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.button {
+				margin-top: 20px;
 			}
 		}
 	}
@@ -553,13 +634,12 @@
 							margin-top: 20px;
 
 							button {
-								width: 100px;
-								padding: 10px 0px;
+								padding: 10px 15px;
 								font-weight: 500;
 								font-size: 13px;
 								border-radius: 10px;
 								background-color: $white;
-								border: 2px solid $bg;
+								border: 1px solid $bg;
 								transition: all 0.3s;
 
 								&:hover {
@@ -710,8 +790,8 @@
 
 						th,
 						td {
-							padding: 10px;
 							text-align: center;
+							padding: 8px;
 						}
 
 						th {
@@ -724,6 +804,7 @@
 						td {
 							@include patientInfoTable;
 							border-bottom: 1px solid #ccc;
+							cursor: pointer;
 						}
 
 						tr {
@@ -738,13 +819,14 @@
 						}
 
 						button {
-							padding: 5px 15px;
+							padding: 5px 10px;
 							background-color: $main-color;
 							color: white;
 							border: none;
 							cursor: pointer;
 							transition: all 0.3s;
 							border: 1px solid $main-color;
+							font-size: 12px;
 
 							&:hover {
 								border: 1px solid $main-color;
@@ -784,12 +866,12 @@
 							&:last-child {
 								border: none;
 
-								&:hover{
+								&:hover {
 									background-color: transparent;
 								}
 							}
-							
-							img{
+
+							img {
 								width: 14px;
 								height: 14px;
 							}
@@ -799,6 +881,79 @@
 							background-color: $menu-color;
 							color: white; // 활성 페이지의 텍스트 색상
 						}
+					}
+				}
+
+				.paymentList {
+					table {
+						th {
+							font-size: 14px;
+							word-wrap: break-word;
+							white-space: normal;
+							word-break: keep-all;
+						}
+
+						td {
+							font-size: 13px;
+						}
+					}
+
+					.pagination {
+						margin-top: 30px;
+
+						a {
+							padding: 3px 10px;
+							font-size: 13px;
+						}
+					}
+				}
+
+				.payment {
+					width: 100%;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+
+					.pay {
+						width: calc(20% - 10px);
+
+						padding: 20px 0px;
+						border-radius: 15px;
+
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						gap: 10px;
+
+						color: $main-font-color;
+
+						p {
+							@include patientInfoPay;
+
+							&:last-child {
+								font-size: 1.1rem;
+							}
+						}
+					}
+
+					.blue {
+						background-color: $blue;
+					}
+
+					.green {
+						background-color: $green;
+					}
+
+					.yellow {
+						background-color: $yellow;
+					}
+
+					.red {
+						background-color: $redpay;
+					}
+
+					.purple {
+						background-color: $purple;
 					}
 				}
 			}
@@ -811,7 +966,7 @@
 				justify-content: center;
 				align-items: center;
 
-				img{
+				img {
 					width: 90%;
 				}
 			}
